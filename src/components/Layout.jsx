@@ -6,6 +6,7 @@ const navigation = [
   { name: 'Beranda', href: '/', current: true },
   { name: 'Tentang Kami', href: '/about', current: false },
   { name: 'Layanan', href: '/services', current: false },
+  { name: 'Galeri', href: '/gallery', current: false },
   { name: 'Kontak', href: '/contact', current: false },
 ];
 
