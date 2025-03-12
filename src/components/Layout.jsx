@@ -17,6 +17,16 @@ function classNames(...classes) {
 export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-white">
+      {/* Navbar Baru */}
+      <div className="bg-red-600 text-white py-2">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-between">
+          <a href="mailto:sales@orionindonesia.id">sales@orionindonesia.id</a>
+          <a href="tel:+627784090419">(+62) 7784090419</a>
+          <span>Batam City</span>
+          <span>Monday - Friday / 8AM - 11PM</span>
+        </div>
+      </div>
+
       <Disclosure as="nav" className="bg-white border-b shadow-sm sticky top-0 z-50">
         {({ open }) => (
           <>
