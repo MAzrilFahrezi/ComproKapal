@@ -16,15 +16,15 @@ function classNames(...classes) {
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
-      <Disclosure as="nav" className="bg-gradient-to-r from-blue-800 to-blue-900 shadow-lg">
+    <div className="min-h-screen bg-white">
+      <Disclosure as="nav" className="bg-white border-b shadow-sm sticky top-0 z-50">
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex h-16 items-center justify-between">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
-                    <h1 className="text-white text-2xl font-bold tracking-tight hover:text-blue-100 transition-colors duration-200">Compro-Kapal</h1>
+                    <h1 className="text-blue-900 text-2xl font-bold tracking-tight hover:text-blue-700 transition-colors duration-200">Compro-Kapal</h1>
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
@@ -34,9 +34,9 @@ export default function Layout({ children }) {
                           href={item.href}
                           className={classNames(
                             item.current
-                              ? 'bg-blue-900 text-white'
-                              : 'text-gray-300 hover:bg-blue-700 hover:text-white',
-                            'rounded-md px-4 py-2 text-sm font-medium transition-all duration-200 ease-in-out'
+                              ? 'text-blue-900 font-semibold'
+                              : 'text-gray-600 hover:text-blue-900',
+                            'px-4 py-2 text-sm font-medium transition-all duration-200 ease-in-out'
                           )}
                           aria-current={item.current ? 'page' : undefined}
                         >
@@ -47,7 +47,7 @@ export default function Layout({ children }) {
                   </div>
                 </div>
                 <div className="-mr-2 flex md:hidden">
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-blue-800 p-2 text-gray-400 hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-800">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:text-blue-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -68,9 +68,9 @@ export default function Layout({ children }) {
                     href={item.href}
                     className={classNames(
                       item.current
-                        ? 'bg-blue-900 text-white'
-                        : 'text-gray-300 hover:bg-blue-700 hover:text-white',
-                      'block rounded-md px-3 py-2 text-base font-medium'
+                        ? 'text-blue-900 font-semibold'
+                        : 'text-gray-600 hover:text-blue-900',
+                      'block px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
@@ -89,7 +89,7 @@ export default function Layout({ children }) {
         </div>
       </main>
 
-      <footer className="bg-gradient-to-r from-blue-800 to-blue-900 text-white pt-12 pb-6">
+      <footer className="bg-gray-900 text-white pt-12 pb-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Company Info */}
