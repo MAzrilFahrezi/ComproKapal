@@ -1,9 +1,10 @@
 import { Fragment } from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { useLocation } from 'react-router-dom';
 
 const navigation = [
-    { name: 'Beranda', href: '/', current: true },
+    { name: 'Beranda', href: '/', current: false },
     { name: 'Tentang Kami', href: '/about', current: false },
     { name: 'Layanan', href: '/services', current: false },
     { name: 'Galeri', href: '/gallery', current: false },
@@ -15,6 +16,15 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+    const location = useLocation();
+
+    const getNavItems = () => {
+        return navigation.map(item => ({
+            ...item,
+            current: item.href === location.pathname
+        }));
+    };
+
     return (
         <>
             {/* Navbar Baru */}
@@ -38,7 +48,7 @@ export default function Navbar() {
                                     </div>
                                     <div className="hidden md:block">
                                         <div className="ml-10 flex items-baseline space-x-4">
-                                            {navigation.map((item, index) => (
+                                            {getNavItems().map((item, index) => (
                                                 <Fragment key={item.name}>
                                                     {index > 0 && (
                                                         <span className="text-gray-300">|</span>
@@ -75,7 +85,7 @@ export default function Navbar() {
 
                         <Disclosure.Panel className="md:hidden">
                             <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-                                {navigation.map((item) => (
+                                {getNavItems().map((item) => (
                                     <Disclosure.Button
                                         key={item.name}
                                         as="a"
