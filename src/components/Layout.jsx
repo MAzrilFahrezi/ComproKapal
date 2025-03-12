@@ -28,20 +28,24 @@ export default function Layout({ children }) {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-10 flex items-baseline space-x-4">
-                      {navigation.map((item) => (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          className={classNames(
-                            item.current
-                              ? 'text-blue-900 font-semibold'
-                              : 'text-gray-600 hover:text-blue-900',
-                            'px-4 py-2 text-sm font-medium transition-all duration-200 ease-in-out'
+                      {navigation.map((item, index) => (
+                        <Fragment key={item.name}>
+                          {index > 0 && (
+                            <span className="text-gray-300">|</span>
                           )}
-                          aria-current={item.current ? 'page' : undefined}
-                        >
-                          {item.name}
-                        </a>
+                          <a
+                            href={item.href}
+                            className={classNames(
+                              item.current
+                                ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
+                                : 'text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900',
+                              'px-4 py-2 text-sm font-medium transition-all duration-200 ease-in-out'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </a>
+                        </Fragment>
                       ))}
                     </div>
                   </div>
