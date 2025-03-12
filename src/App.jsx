@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import ImageSlider from './components/ImageSlider';
+import Tentangkami from './components/Tentangkami';  // pastikan menggunakan 'T' kapital
 
 function Home() {
   return (
@@ -249,6 +250,7 @@ export default function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/tentangkami" element={<Tentangkami />} />
         </Routes>
       </Layout>
     </Router>
