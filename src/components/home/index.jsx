@@ -3,12 +3,14 @@ import AboutCompany from './AboutCompany';
 import Services from './Services';
 import Advantages from './Advantages';
 import Partners from './Partners';
+import Features from './Features';
 
 export default function Home() {
     return (
-        <div className="space-y-16">
+        <div>
             <ImageSlider />
             <AboutCompany />
+            <Features />
             <Services />
             <Advantages />
             <Partners />

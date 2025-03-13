@@ -1,7 +1,8 @@
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { Disclosure } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 const navigation = [
     { name: 'Beranda', href: '/', current: false },
@@ -17,6 +18,21 @@ function classNames(...classes) {
 
 export default function Navbar() {
     const location = useLocation();
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 10;
+            if (isScrolled !== scrolled) {
+                setScrolled(isScrolled);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrolled]);
 
     const getNavItems = () => {
         return navigation.map(item => ({
@@ -27,48 +43,80 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Navbar Baru */}
-            <div className="bg-red-600 text-white py-2">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-between">
-                    <a href="mailto:sales@orionindonesia.id">sales@orionindonesia.id</a>
-                    <a href="tel:+627784090419">(+62) 7784090419</a>
-                    <span>Batam City</span>
-                    <span>Monday - Friday / 8AM - 11PM</span>
+            {/* Top Info Bar */}
+            <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-2">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2">
+                        <a href="mailto:sales@orionindonesia.id" className="flex items-center text-sm hover:text-blue-200 transition-colors group">
+                            <EnvelopeIcon className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
+                            <span>sales@orionindonesia.id</span>
+                        </a>
+                        <a href="tel:+627784090419" className="flex items-center text-sm hover:text-blue-200 transition-colors group">
+                            <PhoneIcon className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
+                            <span>(+62) 7784090419</span>
+                        </a>
+                        <div className="flex items-center text-sm">
+                            <MapPinIcon className="h-4 w-4 mr-2" />
+                            <span>Batam City</span>
+                        </div>
+                        <div className="flex items-center text-sm">
+                            <ClockIcon className="h-4 w-4 mr-2" />
+                            <span>Monday - Friday / 8AM - 11PM</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <Disclosure as="nav" className="bg-white border-b shadow-sm sticky top-0 z-50">
+            <Disclosure as="nav" className={classNames(
+                scrolled ? "py-2 shadow-md bg-white/95 backdrop-blur-sm" : "py-4 bg-white",
+                "sticky top-0 z-50 transition-all duration-300"
+            )}>
                 {({ open }) => (
                     <>
                         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                            <div className="flex h-16 items-center justify-between">
+                            <div className="flex items-center justify-between">
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
-                                        <h1 className="text-blue-900 text-2xl font-bold tracking-tight hover:text-blue-700 transition-colors duration-200">Compro-Kapal</h1>
+                                        <a href="/" className="flex items-center">
+                                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-900 flex items-center justify-center mr-2">
+                                                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20 12L4 4L6 12M20 12L4 20L6 12M20 12H6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </div>
+                                            <h1 className="text-blue-900 text-2xl font-bold tracking-tight hover:text-blue-700 transition-colors duration-200">Orionindo</h1>
+                                        </a>
                                     </div>
                                     <div className="hidden md:block">
-                                        <div className="ml-10 flex items-baseline space-x-4">
-                                            {getNavItems().map((item, index) => (
-                                                <Fragment key={item.name}>
-                                                    {index > 0 && (
-                                                        <span className="text-gray-300">|</span>
+                                        <div className="ml-10 flex items-center space-x-6">
+                                            {getNavItems().map((item) => (
+                                                <motion.a
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    className={classNames(
+                                                        item.current
+                                                            ? 'text-blue-900 font-semibold after:opacity-100 after:w-full'
+                                                            : 'text-gray-600 hover:text-blue-900',
+                                                        'px-1 py-1 text-sm font-medium relative after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-blue-900 after:opacity-0 after:w-0 after:transition-all after:duration-300 hover:after:opacity-100 hover:after:w-full'
                                                     )}
-                                                    <a
-                                                        href={item.href}
-                                                        className={classNames(
-                                                            item.current
-                                                                ? 'text-blue-900 font-semibold border-b-2 border-blue-900'
-                                                                : 'text-gray-600 hover:text-blue-900 hover:border-b-2 hover:border-blue-900',
-                                                            'px-4 py-2 text-sm font-medium transition-all duration-200 ease-in-out'
-                                                        )}
-                                                        aria-current={item.current ? 'page' : undefined}
-                                                    >
-                                                        {item.name}
-                                                    </a>
-                                                </Fragment>
+                                                    aria-current={item.current ? 'page' : undefined}
+                                                    whileHover={{ scale: 1.05 }}
+                                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                                >
+                                                    {item.name}
+                                                </motion.a>
                                             ))}
                                         </div>
                                     </div>
+                                </div>
+                                <div className="hidden md:flex">
+                                    <motion.a
+                                        href="/contact"
+                                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-800 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+                                        whileHover={{ scale: 1.05 }}
+                                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                    >
+                                        Hubungi Kami
+                                    </motion.a>
                                 </div>
                                 <div className="-mr-2 flex md:hidden">
                                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:text-blue-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
@@ -84,7 +132,7 @@ export default function Navbar() {
                         </div>
 
                         <Disclosure.Panel className="md:hidden">
-                            <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                            <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3 border-t border-gray-200 mt-2">
                                 {getNavItems().map((item) => (
                                     <Disclosure.Button
                                         key={item.name}
@@ -92,15 +140,21 @@ export default function Navbar() {
                                         href={item.href}
                                         className={classNames(
                                             item.current
-                                                ? 'text-blue-900 font-semibold'
-                                                : 'text-gray-600 hover:text-blue-900',
-                                            'block px-3 py-2 text-base font-medium'
+                                                ? 'text-blue-900 font-semibold bg-blue-50'
+                                                : 'text-gray-600 hover:text-blue-900 hover:bg-gray-50',
+                                            'block px-3 py-2 text-base font-medium rounded-md transition-all duration-200'
                                         )}
                                         aria-current={item.current ? 'page' : undefined}
                                     >
                                         {item.name}
                                     </Disclosure.Button>
                                 ))}
+                                <a 
+                                    href="/contact"
+                                    className="block w-full text-center mt-3 px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-800 hover:bg-blue-700 focus:outline-none transition-colors duration-200"
+                                >
+                                    Hubungi Kami
+                                </a>
                             </div>
                         </Disclosure.Panel>
                     </>
