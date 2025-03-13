@@ -6,32 +6,32 @@ export default function Partners() {
     const partners = [
         {
             name: 'Pertamina',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Pertamina_Logo.svg',
+            logo: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Pertamina_Logo.svg',
             type: 'Oil & Gas'
         },
         {
             name: 'Pelindo',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Logo_Pelindo.svg',
+            logo: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Logo_Baru_Pelindo_%282021%29.png?20211002211259',
             type: 'Port Services'
         },
         {
             name: 'PTBA',
-            logo: 'https://upload.wikimedia.org/wikipedia/id/7/77/Logo_PTBA.png',
+            logo: 'https://upload.wikimedia.org/wikipedia/commons/b/bc/%28Bukit_Asam%29_Logo_CMYK-01.png',
             type: 'Mining & Resources'
         },
         {
             name: 'Vale Indonesia',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Vale_logo.svg',
+            logo: 'https://vale.com/documents/d/guest/vale-logo',
             type: 'Mining & Resources'
         },
         {
             name: 'Sinar Mas',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Sinar_Mas_Logo.svg',
+            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Sinarmas-Logo.png/1200px-Sinarmas-Logo.png?20190219075517',
             type: 'Conglomerate'
         },
         {
             name: 'Medco Energi',
-            logo: 'https://upload.wikimedia.org/wikipedia/commons/8/8a/Medco_Energi_logo.svg',
+            logo: 'https://cdn.brandfetch.io/idxNQ8kPtO/w/325/h/221/theme/light/logo.png?c=1dxbfHSJFAPEGdCLU4o5B',
             type: 'Energy'
         }
     ];
