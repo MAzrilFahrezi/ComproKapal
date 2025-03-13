@@ -154,7 +154,7 @@ export default function Navbar() {
                                         {item.name}
                                     </Disclosure.Button>
                                 ))}
-                                <a 
+                                <a
                                     href="/contact"
                                     className="block w-full text-center mt-3 px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-800 hover:bg-blue-700 focus:outline-none transition-colors duration-200"
                                 >
