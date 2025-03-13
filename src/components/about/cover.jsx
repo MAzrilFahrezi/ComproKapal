@@ -11,7 +11,7 @@ const Cover = () => {
             <div className="absolute inset-0 flex flex-col items-start justify-center p-8 bg-black bg-opacity-50">
                 <h2 className="text-5xl font-bold text-white mb-4">About</h2>
                 <p className="text-lg text-white">
-                    Take the complexity out of customs Freight Solutions with customs brokerage services
+                    Take the complexity out of customs Freightddd Solutions with customs brokerage services
                 </p>
             </div>
         </section>
