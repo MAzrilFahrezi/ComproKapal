@@ -5,6 +5,7 @@ import About from './components/about';
 import Services from './components/services';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
+import { Analytics } from '@vercel/analytics/next';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
+      <Analytics />
     </Router>
   );
 }
