@@ -6,19 +6,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
   {
-    url: 'https://images.unsplash.com/photo-1559091169-7d20f6c73614?auto=format&fit=crop&q=80',
+    url: 'https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?q=80&w=1974&auto=format&fit=crop&q=80',
     title: 'Survey Dan Verifikasi',
     subtitle: 'Layanan Inspeksi Profesional',
     description: 'Layanan survey dan verifikasi kami mencakup berbagai aspek industri maritim dengan standar internasional untuk memastikan keamanan dan kepatuhan.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?auto=format&fit=crop&q=80',
+    url: 'https://images.unsplash.com/photo-1563119162-b3a3fcf67f8a?q=80&w=2070&auto=format&fit=crop&q=80',
     title: 'Layanan Perbaikan Profesional',
     subtitle: 'Tim Ahli & Peralatan Terkini',
     description: 'Didukung oleh tim profesional berpengalaman dan peralatan modern untuk memberikan layanan perbaikan kapal terbaik.'
   },
   {
-    url: 'https://images.unsplash.com/photo-1471958680802-1345a694ba6d?auto=format&fit=crop&q=80',
+    url: 'https://images.unsplash.com/photo-1595587637401-83ff822bd63e?q=80&w=2101&auto=format&fit=crop&q=80',
     title: 'Solusi Perkapalan Terpadu',
     subtitle: 'Kualitas & Kehandalan Terjamin',
     description: 'Menyediakan solusi lengkap untuk kebutuhan perkapalan Anda dengan standar kualitas tertinggi dan jaminan kehandalan.'
