@@ -3,8 +3,16 @@ import { motion } from 'framer-motion';
 
 export default function AboutCompany() {
     return (
-        <section className="py-20 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 overflow-visible relative">
+            {/* Background decorative elements */}
+            <div className="absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
+                <div className="absolute top-20 right-0 w-64 h-64 bg-blue-50 rounded-full opacity-70 blur-xl"></div>
+                <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-50 rounded-full opacity-40 blur-xl"></div>
+                <div className="absolute top-40 left-20 w-20 h-20 bg-blue-100 rounded-full opacity-60"></div>
+                <div className="absolute bottom-40 right-20 w-16 h-16 bg-blue-100 rounded-full opacity-60"></div>
+            </div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" style={{ zIndex: 10 }}>
                 <div className="text-center mb-16">
                     <motion.h2 
                         initial={{ opacity: 0, y: 20 }}
@@ -32,9 +40,9 @@ export default function AboutCompany() {
                         viewport={{ once: true }}
                         className="relative"
                     >
-                        <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-600 rounded-tl-3xl opacity-20" />
-                        <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-br-3xl opacity-20" />
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-600 rounded-tl-3xl opacity-20" style={{ zIndex: 1 }} />
+                        <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-blue-600 rounded-br-3xl opacity-20" style={{ zIndex: 1 }} />
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ zIndex: 2 }}>
                             <img 
                                 src="https://images.unsplash.com/photo-1582517378602-f109b395ce40?q=80&w=2071&auto=format&fit=crop&q=80" 
                                 alt="Ship construction" 
@@ -49,7 +57,8 @@ export default function AboutCompany() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
-                        className="space-y-6"
+                        className="space-y-6 relative" 
+                        style={{ zIndex: 10 }}
                     >
                         <h3 className="text-2xl font-bold text-blue-900">PT. Orionindo Jaya Ocean</h3>
                         <p className="text-lg text-gray-700 leading-relaxed">
@@ -60,15 +69,15 @@ export default function AboutCompany() {
                         </p>
                         
                         <div className="grid grid-cols-3 gap-6 mt-8">
-                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="text-blue-600 font-bold text-3xl mb-2">15+</div>
                                 <div className="text-gray-600 font-medium">Tahun Pengalaman</div>
                             </div>
-                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="text-blue-600 font-bold text-3xl mb-2">500+</div>
                                 <div className="text-gray-600 font-medium">Proyek Selesai</div>
                             </div>
-                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100">
+                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                                 <div className="text-blue-600 font-bold text-3xl mb-2">100%</div>
                                 <div className="text-gray-600 font-medium">Kepuasan Klien</div>
                             </div>

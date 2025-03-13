@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 
 export default function Features() {
     return (
-        <section className="relative py-20 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+        <section className="relative py-20 bg-gradient-to-b from-white to-gray-50 overflow-visible">
             {/* Background decorative elements */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5 pointer-events-none">
+            <div className="absolute top-0 left-0 w-full h-full overflow-visible opacity-30  pointer-events-none" style={{ zIndex: 1 }}>
                 <svg className="absolute top-0 left-0 w-96 h-96 text-blue-600 transform -translate-x-1/2 -translate-y-1/2" fill="currentColor" viewBox="0 0 200 200">
                     <path d="M44.3,-76.4C58.8,-69.8,72.9,-59.6,79.1,-45.4C85.2,-31.2,83.5,-13.1,79.8,3.7C76.1,20.4,70.4,35.8,61,48.3C51.6,60.8,38.5,70.4,24.2,75.2C10,80,-5.4,79.8,-20.9,76.7C-36.5,73.5,-52.3,67.2,-65.3,56.4C-78.4,45.6,-88.7,30.2,-89.9,14.1C-91,-2,-83,-17.7,-73.7,-30.9C-64.4,-44.1,-53.8,-54.7,-41.3,-61.9C-28.9,-69,-14.4,-72.7,0.7,-73.9C15.9,-75.1,31.8,-74,44.3,-76.4Z" transform="translate(100 100)" />
                 </svg>
@@ -14,7 +14,11 @@ export default function Features() {
                 </svg>
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Additional floating elements for depth */}
+            <div className="absolute top-1/4 left-1/3 w-20 h-20 rounded-full bg-blue-100/30 blur-lg" style={{ zIndex: 2 }}></div>
+            <div className="absolute bottom-1/4 right-1/4 w-32 h-32 rounded-full bg-blue-100/30 blur-lg" style={{ zIndex: 2 }}></div>
+
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ zIndex: 10 }}>
                 <div className="text-center mb-16">
                     <motion.h2 
                         initial={{ opacity: 0, y: 20 }}
@@ -38,7 +42,7 @@ export default function Features() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12" style={{ zIndex: 20 }}>
                     <motion.div 
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -103,7 +107,7 @@ export default function Features() {
                     </motion.div>
                 </div>
 
-                <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-hidden shadow-xl">
+                <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-visible shadow-xl relative z-20">
                     <div className="grid md:grid-cols-2 items-center">
                         <div className="p-8 md:p-12">
                             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Siap untuk solusi maritim profesional?</h3>

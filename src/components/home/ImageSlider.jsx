@@ -78,20 +78,22 @@ export default function ImageSlider() {
 
   return (
     <>
-      {/* Main slider without internal waves */}
-      <div className="relative w-full h-screen">
+      {/* Main slider with proper z-index handling */}
+      <div className="relative w-full h-screen overflow-hidden">
+        {/* Background pattern with proper z-index */}
+        <div className="absolute inset-0 bg-[url('/ship-pattern.png')] opacity-10" style={{ zIndex: 1 }}></div>
+        
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className="relative h-screen">
               <div
                 className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-out ${currentSlide === index ? 'brightness-80 scale-100' : 'brightness-60 scale-110'}`}
-                style={{ backgroundImage: `url(${image.url})` }}
+                style={{ backgroundImage: `url(${image.url})`, zIndex: 2 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" />
-                <div className="absolute inset-0 bg-[url('/ship-pattern.png')] opacity-10" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" style={{ zIndex: 3 }} />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" style={{ zIndex: 3 }} />
               </div>
-              <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+              <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto" style={{ zIndex: 10 }}>
                 <div 
                   className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${
                     currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
@@ -132,7 +134,7 @@ export default function ImageSlider() {
           ))}
         </Slider>
 
-        {/* Custom slider dots style */}
+        {/* Custom slider dots style with proper z-index */}
         <style jsx="true">{`
           :global(.slick-dots) {
             bottom: 20px;
@@ -148,6 +150,10 @@ export default function ImageSlider() {
           :global(.slick-dots li.slick-active button:before) {
             color: white;
             opacity: 1;
+          }
+
+          :global(.slick-prev), :global(.slick-next) {
+            z-index: 30;
           }
         `}</style>
       </div>

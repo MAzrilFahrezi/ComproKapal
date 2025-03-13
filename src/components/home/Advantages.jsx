@@ -37,26 +37,26 @@ export default function Advantages() {
     ];
 
     return (
-        <section className="relative py-24 overflow-hidden">
-            {/* Wave decorations with higher z-index */}
-            <div className="absolute top-0 left-0 right-0 h-40 overflow-hidden z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute w-full">
+        <section className="relative py-24 overflow-visible">
+            {/* Wave decorations with proper z-index */}
+            <div className="absolute top-0 left-0 right-0 h-40 overflow-visible" style={{ zIndex: 1 }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute w-full" style={{ top: -1 }}>
                     <path fill="#eff6ff" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg>
             </div>
 
-            {/* Background gradient - moved below wave */}
-            <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-blue-50"></div>
+            {/* Background gradient - with proper z-index */}
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-blue-50" style={{ zIndex: 0 }}></div>
 
-            {/* Decorative circles with adjusted z-index */}
-            <div className="absolute inset-0 z-20">
+            {/* Decorative circles with higher z-index */}
+            <div className="absolute inset-0" style={{ zIndex: 2 }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-50 blur-2xl"></div>
                 <div className="absolute top-1/3 -left-20 w-64 h-64 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full opacity-50 blur-2xl"></div>
                 <div className="absolute bottom-20 right-10 w-48 h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-40 blur-2xl"></div>
             </div>
             
-            {/* Main content with highest z-index */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-30">
+            {/* Main content with higher z-index */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" style={{ zIndex: 10 }}>
                 {/* Section header */}
                 <div className="text-center mb-16">
                     <motion.div
@@ -120,8 +120,8 @@ export default function Advantages() {
             </div>
 
             {/* Bottom wave with proper z-index */}
-            <div className="absolute bottom-0 left-0 right-0 h-40 overflow-hidden z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 w-full transform rotate-180">
+            <div className="absolute bottom-0 left-0 right-0 h-40 overflow-visible" style={{ zIndex: 1 }}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 w-full transform rotate-180" style={{ bottom: -1 }}>
                     <path fill="#eff6ff" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg>
             </div>
