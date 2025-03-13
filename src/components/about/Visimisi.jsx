@@ -6,7 +6,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-function Tentangkami() {
+function Visimisi() {
   const settings = {
     dots: true,
     infinite: true,
@@ -19,18 +19,6 @@ function Tentangkami() {
 
   return (
     <div className="w-full">
-      {/* Bagian Tentang Kami */}
-      <section className="relative mb-16">
-        <img 
-          src="https://img.freepik.com/premium-photo/cargo-ship-ocean-with-containers_951562-15636.jpg" 
-          alt="Kapal Kargo" 
-          className="w-full h-64 object-cover rounded-none"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-4xl font-bold text-white bg-black bg-opacity-50 p-4 rounded">PT. ORIONINDO JAYA OCEAN</h2>
-        </div>
-      </section>
-
       {/* Visi dan Misi dengan Slider */}
       <section className="flex flex-col md:flex-row items-center mb-16">
         <div className="md:w-1/2 mb-8 md:mb-0">
@@ -76,5 +64,5 @@ function Tentangkami() {
   );
 }
 
-export default Tentangkami;
+export default Visimisi;
 
