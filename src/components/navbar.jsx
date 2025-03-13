@@ -43,7 +43,7 @@ export default function Navbar() {
 
     return (
         <>
-            {/* Top Info Bar */}
+            {/* Top Info Bar - Remains at the top of the document */}
             <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-2">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2">
@@ -57,7 +57,7 @@ export default function Navbar() {
                         </a>
                         <div className="flex items-center text-sm">
                             <MapPinIcon className="h-4 w-4 mr-2" />
-                            <span>Batam City</span>
+                            <span>Palembang City</span>
                         </div>
                         <div className="flex items-center text-sm">
                             <ClockIcon className="h-4 w-4 mr-2" />
@@ -67,9 +67,14 @@ export default function Navbar() {
                 </div>
             </div>
 
+            {/* Empty div to prevent content jump when navbar becomes fixed */}
+            {scrolled && <div className="h-16"></div>}
+
             <Disclosure as="nav" className={classNames(
-                scrolled ? "py-2 shadow-md bg-white/95 backdrop-blur-sm" : "py-4 bg-white",
-                "sticky top-0 z-50 transition-all duration-300"
+                scrolled 
+                    ? "fixed top-0 left-0 right-0 w-full py-2 shadow-md bg-white/95 backdrop-blur-sm transform-none transition-all duration-300 ease-in-out" 
+                    : "relative py-4 bg-white transition-all duration-300",
+                "z-50"
             )}>
                 {({ open }) => (
                     <>
