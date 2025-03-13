@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const images = [
   {
@@ -78,130 +77,80 @@ export default function ImageSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} className="relative h-screen">
-            <motion.div
-              className="absolute inset-0 bg-cover bg-center bg-fixed"
-              initial={{ scale: 1.1, filter: 'brightness(0.8)' }}
-              animate={{
-                scale: currentSlide === index ? 1 : 1.1,
-                filter: currentSlide === index ? 'brightness(0.8)' : 'brightness(0.6)'
-              }}
-              transition={{ duration: 6 }}
-              style={{
-                backgroundImage: `url(${image.url})`,
-              }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" />
-              <div className="absolute inset-0 bg-[url('/ship-pattern.png')] opacity-10" />
-            </motion.div>
-            <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
-              <motion.div
-                initial={{ y: 30, opacity: 0 }}
-                animate={{ y: currentSlide === index ? 0 : 30, opacity: currentSlide === index ? 1 : 0 }}
-                transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
-                className="space-y-6 max-w-3xl"
+    <>
+      {/* Main slider without internal waves */}
+      <div className="relative w-full h-screen">
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index} className="relative h-screen">
+              <div
+                className={`absolute inset-0 bg-cover bg-center transition-all duration-1000 ease-out ${currentSlide === index ? 'brightness-80 scale-100' : 'brightness-60 scale-110'}`}
+                style={{ backgroundImage: `url(${image.url})` }}
               >
-                <motion.h2
-                  className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-lg"
-                  initial={{ y: 30, opacity: 0 }}
-                  animate={{ y: currentSlide === index ? 0 : 30, opacity: currentSlide === index ? 1 : 0 }}
-                  transition={{ duration: 1, delay: 0.5, ease: 'easeOut' }}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" />
+                <div className="absolute inset-0 bg-[url('/ship-pattern.png')] opacity-10" />
+              </div>
+              <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+                <div 
+                  className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${
+                    currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                  }`}
                 >
-                  {image.title}
-                </motion.h2>
-                <motion.p
-                  className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed drop-shadow-md"
-                  initial={{ y: 30, opacity: 0 }}
-                  animate={{ y: currentSlide === index ? 0 : 30, opacity: currentSlide === index ? 1 : 0 }}
-                  transition={{ duration: 1, delay: 0.6, ease: 'easeOut' }}
-                >
-                  {image.subtitle}
-                </motion.p>
-                <motion.p
-                  className="text-base md:text-lg text-gray-300 mb-8 drop-shadow-md"
-                  initial={{ y: 30, opacity: 0 }}
-                  animate={{ y: currentSlide === index ? 0 : 30, opacity: currentSlide === index ? 1 : 0 }}
-                  transition={{ duration: 1, delay: 0.65, ease: 'easeOut' }}
-                >
-                  {image.description}
-                </motion.p>
-                <motion.div
-                  className="flex gap-4"
-                  initial={{ y: 30, opacity: 0 }}
-                  animate={{ y: currentSlide === index ? 0 : 30, opacity: currentSlide === index ? 1 : 0 }}
-                  transition={{ duration: 1, delay: 0.7, ease: 'easeOut' }}
-                >
-                  <motion.a
-                    href="/contact"
-                    className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-xl backdrop-blur-sm"
-                    whileHover={{ scale: 1.05, backgroundColor: '#2563eb' }}
-                    whileTap={{ scale: 0.95 }}
+                  <h2
+                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-lg"
                   >
-                    Hubungi Kami
-                  </motion.a>
-                  <motion.a
-                    href="/services"
-                    className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300 hover:scale-105 hover:shadow-xl backdrop-blur-sm"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    {image.title}
+                  </h2>
+                  <p
+                    className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed drop-shadow-md"
                   >
-                    Layanan Kami
-                  </motion.a>
-                </motion.div>
-              </motion.div>
+                    {image.subtitle}
+                  </p>
+                  <p
+                    className="text-base md:text-lg text-gray-300 mb-8 drop-shadow-md"
+                  >
+                    {image.description}
+                  </p>
+                  <div className="flex gap-4">
+                    <a
+                      href="/contact"
+                      className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
+                    >
+                      Hubungi Kami
+                    </a>
+                    <a
+                      href="/services"
+                      className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
+                    >
+                      Layanan Kami
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
-      <div className="absolute bottom-0 left-0 right-0 h-24 overflow-hidden">
-        <div className="wave-container">
-          <div className="wave wave1"></div>
-          <div className="wave wave2"></div>
-          <div className="wave wave3"></div>
-        </div>
+          ))}
+        </Slider>
+
+        {/* Custom slider dots style */}
+        <style jsx="true">{`
+          :global(.slick-dots) {
+            bottom: 20px;
+            z-index: 20;
+          }
+          
+          :global(.slick-dots li button:before) {
+            color: white;
+            opacity: 0.5;
+            font-size: 12px;
+          }
+          
+          :global(.slick-dots li.slick-active button:before) {
+            color: white;
+            opacity: 1;
+          }
+        `}</style>
       </div>
-      <style jsx>{`
-        .wave-container {
-          position: relative;
-          width: 100%;
-          height: 100%;
-        }
-        .wave {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 200%;
-          height: 100%;
-          background: url('data:image/svg+xml,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z" fill="%23ffffff" fill-opacity=".15"/></svg>') repeat-x;
-          animation: wave 25s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-          transform: translate3d(0, 0, 0);
-          filter: blur(1px);
-        }
-        .wave1 {
-          opacity: 0.3;
-          animation: wave 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-          filter: blur(0px);
-        }
-        .wave2 {
-          opacity: 0.2;
-          animation: wave 15s cubic-bezier(0.4, 0, 0.2, 1) -.125s infinite;
-          filter: blur(1px);
-        }
-        .wave3 {
-          opacity: 0.15;
-          animation: wave 10s cubic-bezier(0.4, 0, 0.2, 1) -.5s infinite;
-          filter: blur(2px);
-        }
-        @keyframes wave {
-          0% { transform: translateX(0); }
-          50% { transform: translateX(-50%); }
-          100% { transform: translateX(-100%); }
-        }
-      `}</style>
-    </div>
+    </>
   );
 }
