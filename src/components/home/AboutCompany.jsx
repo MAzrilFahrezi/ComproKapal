@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import CountUp from 'react-countup';
 
 export default function AboutCompany() {
     return (
@@ -69,18 +70,39 @@ export default function AboutCompany() {
                         </p>
                         
                         <div className="grid grid-cols-3 gap-6 mt-8">
-                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                                <div className="text-blue-600 font-bold text-3xl mb-2">15+</div>
+                            <motion.div 
+                                whileInView={{ scale: [0.9, 1.05, 1] }} 
+                                transition={{ duration: 0.8 }}
+                                viewport={{ once: true }}
+                                className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <div className="text-blue-600 font-bold text-3xl mb-2">
+                                    <CountUp start={0} end={15} duration={2.5} suffix="+" />
+                                </div>
                                 <div className="text-gray-600 font-medium">Tahun Pengalaman</div>
-                            </div>
-                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                                <div className="text-blue-600 font-bold text-3xl mb-2">500+</div>
+                            </motion.div>
+                            <motion.div 
+                                whileInView={{ scale: [0.9, 1.05, 1] }} 
+                                transition={{ duration: 0.8, delay: 0.2 }}
+                                viewport={{ once: true }}
+                                className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <div className="text-blue-600 font-bold text-3xl mb-2">
+                                    <CountUp start={0} end={500} duration={2.5} suffix="+" />
+                                </div>
                                 <div className="text-gray-600 font-medium">Proyek Selesai</div>
-                            </div>
-                            <div className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                                <div className="text-blue-600 font-bold text-3xl mb-2">100%</div>
+                            </motion.div>
+                            <motion.div 
+                                whileInView={{ scale: [0.9, 1.05, 1] }} 
+                                transition={{ duration: 0.8, delay: 0.4 }}
+                                viewport={{ once: true }}
+                                className="p-4 bg-white rounded-xl shadow-lg border border-gray-100 relative hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <div className="text-blue-600 font-bold text-3xl mb-2">
+                                    <CountUp start={0} end={100} duration={2.5} suffix="%" />
+                                </div>
                                 <div className="text-gray-600 font-medium">Kepuasan Klien</div>
-                            </div>
+                            </motion.div>
                         </div>
                     </motion.div>
                 </div>
