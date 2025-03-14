@@ -3,6 +3,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.jpg';
 
 const navigation = [
     { name: 'Beranda', href: '/', current: false },
@@ -83,12 +84,11 @@ export default function Navbar() {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <a href="/" className="flex items-center">
-                                            <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-900 flex items-center justify-center mr-2">
-                                                <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20 12L4 4L6 12M20 12L4 20L6 12M20 12H6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                                </svg>
-                                            </div>
-                                            <h1 className="text-blue-900 text-2xl font-bold tracking-tight hover:text-blue-700 transition-colors duration-200">Orionindo</h1>
+                                            <img 
+                                                src={logo} 
+                                                alt="Orionindo Logo"
+                                                className="h-10 w-auto"
+                                            />
                                         </a>
                                     </div>
                                     <div className="hidden md:block">
