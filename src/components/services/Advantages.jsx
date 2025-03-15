@@ -67,12 +67,14 @@ export default function Advantages() {
                         className="text-lg text-gray-600 max-w-3xl mx-auto"
                     >
                         Dengan pengalaman dan keahlian yang kami miliki, kami menawarkan berbagai keunggulan
-                        untuk memenuhi kebutuhan bisnis maritim Anda dengan standar internasional.
+                        untuk memenuhi kebutuhan bisnis maritim Anda dengan standar internasional. Didukung oleh tim
+                        profesional yang berdedikasi, kami berkomitmen untuk memberikan layanan terbaik dengan
+                        mengutamakan kualitas, efisiensi, dan kepuasan klien dalam setiap aspek pekerjaan.
                     </motion.p>
                 </div>
 
                 {/* Advantages grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     {advantages.map((advantage, index) => (
                         <motion.div
                             key={index}
@@ -83,7 +85,6 @@ export default function Advantages() {
                             whileHover={{ y: -8 }}
                             className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
                         >
-                            {/* Card background decoration */}
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-transparent rounded-full -mt-10 -mr-10 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
 
@@ -101,11 +102,10 @@ export default function Advantages() {
                                 </p>
                             </div>
 
-                            {/* Bottom border decoration */}
                             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></div>
                         </motion.div>
                     ))}
-                </div>
+                </div> */}
             </div>
 
             {/* Call to Action Section */}

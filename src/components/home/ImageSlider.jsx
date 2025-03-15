@@ -12,13 +12,13 @@ const images = [
   },
   {
     url: 'https://images.unsplash.com/photo-1563119162-b3a3fcf67f8a?q=80&w=2070&auto=format&fit=crop&q=80',
-    title: 'Layanan Perbaikan Profesional',
+    title: 'Layanan Survey Kapal',
     subtitle: 'Tim Ahli & Peralatan Terkini',
-    description: 'Didukung oleh tim profesional berpengalaman dan peralatan modern untuk memberikan layanan perbaikan kapal terbaik.'
+    description: 'Didukung oleh tim profesional berpengalaman dan peralatan modern untuk memberikan layanan survey kapal terbaik.'
   },
   {
     url: 'https://images.unsplash.com/photo-1595587637401-83ff822bd63e?q=80&w=2101&auto=format&fit=crop&q=80',
-    title: 'Solusi Perkapalan Terpadu',
+    title: 'Layanan Survey Kargo',
     subtitle: 'Kualitas & Kehandalan Terjamin',
     description: 'Menyediakan solusi lengkap untuk kebutuhan perkapalan Anda dengan standar kualitas tertinggi dan jaminan kehandalan.'
   }
@@ -82,7 +82,7 @@ export default function ImageSlider() {
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background pattern with proper z-index */}
         <div className="absolute inset-0 bg-[url('/ship-pattern.png')] opacity-10" style={{ zIndex: 1 }}></div>
-        
+
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className="relative h-screen">
@@ -94,10 +94,9 @@ export default function ImageSlider() {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" style={{ zIndex: 3 }} />
               </div>
               <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto" style={{ zIndex: 10 }}>
-                <div 
-                  className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${
-                    currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                  }`}
+                <div
+                  className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                    }`}
                 >
                   <h2
                     className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-lg"

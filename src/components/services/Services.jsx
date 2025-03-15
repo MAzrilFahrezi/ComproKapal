@@ -10,82 +10,39 @@ export default function Services() {
     const services = [
         {
             icon: <FaShip className="w-8 h-8" />,
-            title: 'Cargo Marine Inquiry',
-            description: 'Layanan pemeriksaan dan verifikasi kargo maritim dengan standar internasional.',
+            title: 'Survei Kapal',
+            description: 'Layanan survei kapal komprehensif untuk memastikan kelaikan dan keamanan operasional dengan standar internasional.',
             features: [
-                'Verifikasi kualitas dan kuantitas kargo',
-                'Pengawasan pemuatan dan pembongkaran',
-                'Dokumentasi dan pelaporan detail',
-                'Koordinasi dengan pihak pelabuhan'
+                'Survei Draft',
+                'Survei Kondisi On/Off Hire untuk Semua Jenis Kapal',
+                'Survei Kondisi Kerusakan Kapal untuk Klaim Asuransi',
+                'Inspeksi Pra-Charter dan Pra-Pembelian Kapal',
+                'Inspeksi Kondisi Umum Lambung dan Mesin',
+                'Survei Bunker',
+                'Survei Towing dan Lashing',
+                'Investigasi Perlindungan dan Hal-hal Terkait Club Indemnity'
             ],
-            image: 'https://images.unsplash.com/photo-1601311852860-1d8f42381551?auto=format&fit=crop&q=80',
+            image: 'https://www.tuv.com/content-media-files/government-inspections-international-trade/tuev-rheinland-government-inspections-international-trade-marine-st-1393552976_core_8_3.jpg',
             bgGradient: 'from-blue-600 to-blue-800'
         },
         {
-            icon: <FaOilCan className="w-8 h-8" />,
-            title: 'Petroleum & Chemical Inspection',
-            description: 'Layanan inspeksi produk minyak dan bahan kimia dengan standar keamanan tinggi.',
+            icon: <FaClipboardCheck className="w-8 h-8" />,
+            title: 'Survei Kargo',
+            description: 'Memfasilitasi pelaksanaan transaksi yang cepat dan efisien, meningkatkan keamanan dan keandalan, serta mencegah gangguan jadwal pengiriman.',
             features: [
-                'Analisis produk minyak dan kimia',
-                'Sertifikasi kualitas produk',
-                'Pengujian laboratorium komprehensif',
-                'Pemantauan kualitas berkelanjutan'
+                'Survei/inspeksi bongkar muat',
+                'Survei pra-pengiriman',
+                'Survei pra-pembongkaran',
+                'Pengawasan penataan, pengamanan, dan pengikatan kargo',
+                'Survei kondisi kargo dan pengawasan kargo',
+                'Penentuan kuantitas melalui sounding, penimbangan, tally, dan survei draft',
+                'Survei kontainer, minyak, dan bahan kimia',
+                'Pengambilan sampel kargo untuk analisis dan penentuan kualitas'
             ],
-            image: 'https://www.sgs.com/-/media/sgscorp/images/temporary/suitability-inspection-and-wall-wash.cdn.en.1.jpg',
+            image: 'https://5.imimg.com/data5/SELLER/Default/2023/3/DC/AM/FR/4155215/cargo-survey-services.jpg',
             bgGradient: 'from-indigo-600 to-indigo-800'
         },
-        {
-            icon: <FaClipboardCheck className="w-8 h-8" />,
-            title: 'P&I Surveyor',
-            description: 'Layanan pemeriksaan dan investigasi profesional untuk klaim asuransi maritim.',
-            features: [
-                'Pemeriksaan klaim asuransi maritim',
-                'Penilaian kerusakan kapal dan kargo',
-                'Analisis penyebab kerusakan',
-                'Rekomendasi pencegahan'
-            ],
-            image: 'https://theviswagroup.com/wp-content/themes/viswa/images/pi-surveys-section_2.png',
-            bgGradient: 'from-cyan-600 to-cyan-800'
-        },
-        {
-            icon: <FaAnchor className="w-8 h-8" />,
-            title: 'Marine Survey & Inspection',
-            description: 'Layanan survei kapal komprehensif untuk memastikan kelaikan dan keamanan operasional.',
-            features: [
-                'Inspeksi kondisi kapal menyeluruh',
-                'Pemeriksaan kelaikan kapal',
-                'Evaluasi sistem keselamatan',
-                'Sertifikasi kelayakan'
-            ],
-            image: 'https://imgix-prod.sgs.com/-/jssmedia/sgscorp/images/natural-resources/draft-survey-tools-sgs-peru-nofocalpoint.cdn.en.1.jpg?fit=clip&auto=format&w=1600&h=900',
-            bgGradient: 'from-blue-700 to-blue-900'
-        },
-        {
-            icon: <FaWrench className="w-8 h-8" />,
-            title: 'Technical Consulting',
-            description: 'Layanan konsultasi teknis untuk optimasi operasional dan efisiensi kapal.',
-            features: [
-                'Konsultasi teknis operasional',
-                'Optimasi kinerja sistem',
-                'Audit teknis berkala',
-                'Rekomendasi peningkatan'
-            ],
-            image: 'https://5.imimg.com/data5/SELLER/Default/2022/6/SE/MS/PK/153138101/marine-consultancy-services-1000x1000.webp',
-            bgGradient: 'from-indigo-700 to-indigo-900'
-        },
-        {
-            icon: <FaChartLine className="w-8 h-8" />,
-            title: 'Quality Management',
-            description: 'Layanan implementasi dan sertifikasi sistem manajemen mutu.',
-            features: [
-                'Implementasi sistem mutu',
-                'Audit dan sertifikasi ISO',
-                'Pelatihan personel',
-                'Pengembangan SOP'
-            ],
-            image: 'https://www.oceanevogroup.com/wp-content/uploads/2019/09/services-quality-assurance.jpg',
-            bgGradient: 'from-cyan-700 to-cyan-900'
-        }
+
     ];
 
     const stats = [
@@ -189,13 +146,6 @@ export default function Services() {
                     </svg>
                 </div>
 
-                {/* Floating decorative elements */}
-                <div className="absolute top-20 right-10 w-64 h-64 rounded-full bg-blue-200 opacity-20 blur-3xl animate-pulse"></div>
-                <div className="absolute bottom-40 left-10 w-80 h-80 rounded-full bg-blue-300 opacity-10 blur-3xl animate-pulse delay-1000"></div>
-                <div className="absolute top-1/2 left-1/4 w-6 h-6 rounded-full bg-blue-500 opacity-30"></div>
-                <div className="absolute top-1/3 right-1/4 w-4 h-4 rounded-full bg-blue-400 opacity-40"></div>
-                <div className="absolute bottom-1/4 right-1/3 w-8 h-8 rounded-full bg-blue-600 opacity-20"></div>
-
                 <div className="max-w-7xl mx-auto relative">
                     {/* Section header with decorative elements */}
                     <div className="text-center mb-16 relative">
@@ -205,85 +155,69 @@ export default function Services() {
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
                         >
-                            <span className="inline-block px-4 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full mb-4">Our Services</span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Layanan Profesional Kami</h2>
-                            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto rounded-full mb-6"></div>
-                            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                                Solusi lengkap untuk kebutuhan perkapalan Anda dengan standar kualitas internasional
+                            <span className="inline-block px-6 py-2 bg-blue-100 text-blue-800 text-sm font-medium rounded-full mb-4">
+                                Layanan Kami
+                            </span>
+                            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                                Solusi Profesional
+                            </h2>
+                            <div className="w-32 h-2 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto rounded-full mb-6"></div>
+                            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                                Memberikan layanan survei berkualitas tinggi dengan standar internasional
                             </p>
                         </motion.div>
-
-                        {/* Decorative dots */}
-                        <div className="absolute -top-6 left-1/4 flex space-x-1">
-                            <div className="w-2 h-2 rounded-full bg-blue-300"></div>
-                            <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                        </div>
-                        <div className="absolute -bottom-6 right-1/4 flex space-x-1">
-                            <div className="w-2 h-2 rounded-full bg-blue-300"></div>
-                            <div className="w-2 h-2 rounded-full bg-blue-400"></div>
-                            <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                        </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {/* Updated grid to 2 columns */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
                         {services.map((service, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                transition={{ duration: 0.5, delay: index * 0.2 }}
                                 viewport={{ once: true }}
-                                className="group relative bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden"
+                                className="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden"
                             >
                                 {/* Card Header with Image */}
-                                <div className="relative h-64 overflow-hidden">
+                                <div className="relative h-72 overflow-hidden">
                                     <img
                                         src={service.image}
                                         alt={service.title}
                                         className="w-full h-full object-cover transform group-hover:scale-110 transition duration-700"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent"></div>
 
-                                    {/* Wave overlay at bottom of image */}
-                                    <div className="absolute bottom-0 left-0 right-0 w-full overflow-hidden">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-16 text-white">
-                                            <path fill="currentColor" fillOpacity="0.8" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,202.7C672,203,768,181,864,186.7C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                                        </svg>
-                                    </div>
-
-                                    {/* Title Overlay */}
-                                    <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                                        <h3 className="text-2xl font-bold text-white mb-2">{service.title}</h3>
+                                    {/* Title Overlay - Removed icon section */}
+                                    <div className="absolute bottom-0 left-0 right-0 p-8 z-10">
+                                        <h3 className="text-3xl font-bold text-white mb-2">{service.title}</h3>
+                                        <p className="text-gray-200 text-lg">{service.description}</p>
                                     </div>
                                 </div>
 
                                 {/* Card Content */}
-                                <div className="p-6">
-                                    <p className="text-gray-600 mb-5">{service.description}</p>
-                                    <div className="space-y-3">
+                                <div className="p-8">
+                                    <div className="space-y-4">
                                         {service.features.map((feature, idx) => (
                                             <motion.div
                                                 key={idx}
                                                 initial={{ opacity: 0, x: -20 }}
                                                 whileInView={{ opacity: 1, x: 0 }}
                                                 transition={{ duration: 0.3, delay: idx * 0.1 }}
-                                                className="flex items-center space-x-3 group"
+                                                className="flex items-start space-x-4 group"
                                             >
-                                                <div className={`flex-shrink-0 w-2 h-2 rounded-full bg-gradient-to-r ${service.bgGradient}`}></div>
+                                                <div className={`flex-shrink-0 w-1.5 h-1.5 mt-2.5 rounded-full bg-gradient-to-r ${service.bgGradient}`}></div>
                                                 <p className="text-gray-700 group-hover:text-gray-900 transition-colors duration-200">
                                                     {feature}
                                                 </p>
                                             </motion.div>
                                         ))}
                                     </div>
-
-                                    {/* Learn more link */}
-
                                 </div>
 
-                                {/* Hover Effect Border */}
+                                {/* Enhanced hover effects */}
                                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
                             </motion.div>
                         ))}
                     </div>

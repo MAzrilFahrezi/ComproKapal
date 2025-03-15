@@ -20,7 +20,7 @@ export default function Features() {
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ zIndex: 10 }}>
                 <div className="text-center mb-16">
-                    <motion.h2 
+                    <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
@@ -29,7 +29,7 @@ export default function Features() {
                     >
                         Mengapa Memilih Kami
                     </motion.h2>
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, scale: 0 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
@@ -43,7 +43,7 @@ export default function Features() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12" style={{ zIndex: 20 }}>
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.1 }}
@@ -64,7 +64,7 @@ export default function Features() {
                         </p>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.3 }}
@@ -85,7 +85,7 @@ export default function Features() {
                         </p>
                     </motion.div>
 
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.5 }}
@@ -119,9 +119,9 @@ export default function Features() {
                             </a>
                         </div>
                         <div className="hidden md:block relative h-full overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?auto=format&fit=crop&q=80" 
-                                alt="Maritime operations" 
+                            <img
+                                src="public\gambar1.jpg"
+                                alt="Maritime operations"
                                 className="w-full h-full object-cover object-center"
                             />
                             <div className="absolute inset-0 bg-gradient-to-l from-transparent to-blue-800/90"></div>
