@@ -1,188 +1,132 @@
 import React from 'react';
-import { FaShip, FaOilCan, FaClipboardCheck, FaAnchor, FaWrench, FaChartLine } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { FaShip, FaClipboardCheck } from 'react-icons/fa';
 
 export default function Services() {
     const services = [
         {
-            icon: <FaShip className="w-10 h-10 text-white" />,
-            title: "Cargo Marine Inquiry",
+            icon: <FaShip className="w-12 h-12 text-white" />,
+            title: "Survei Kapal",
+            description: "Memberikan solusi yang memastikan klaim dibayar, kerusakan diperbaiki, kapal kembali beroperasi, dan meminimalkan risiko.",
             mainPoints: [
-                "Verifikasi dan pemeriksaan kargo maritim untuk memastikan kualitas dan kuantitas sesuai dengan standar.",
-                "Pengawasan pemuatan dan pembongkaran kargo."
+                "Survei Draft",
+                "Survei Kondisi On/Off Hire untuk Semua Jenis Kapal",
+                "Survei Kondisi Kerusakan Kapal untuk Klaim Asuransi",
+                "Inspeksi Pra-Charter dan Pra-Pembelian Kapal",
+                "Inspeksi Kondisi Umum Lambung dan Mesin",
+                "Survei Bunker",
+                "Survei Towing dan Lashing",
+                "Investigasi Perlindungan dan Hal-hal Terkait Club Indemnity"
             ],
-            additionalPoints: [
-                "Dokumentasi dan pelaporan detail",
-                "Koordinasi dengan pihak pelabuhan"
-            ],
-            bgColor: "from-blue-600 to-blue-800"
+            bgColor: "from-blue-600 to-blue-800",
+            hoverColor: "group-hover:from-blue-700 group-hover:to-blue-900"
         },
         {
-            icon: <FaOilCan className="w-10 h-10 text-white" />,
-            title: "Petroleum & Chemical Inspection",
+            icon: <FaClipboardCheck className="w-12 h-12 text-white" />,
+            title: "Survei Kargo",
+            description: "Memfasilitasi pelaksanaan transaksi yang cepat dan efisien, meningkatkan keamanan dan keandalan, serta mencegah gangguan jadwal pengiriman.",
             mainPoints: [
-                "Analisis dan inspeksi produk minyak serta bahan kimia untuk menjamin kepatuhan terhadap spesifikasi industri.",
-                "Sertifikasi kualitas produk sebelum pengiriman."
+                "Survei/inspeksi bongkar muat",
+                "Survei pra-pengiriman",
+                "Survei pra-pembongkaran",
+                "Pengawasan penataan, pengamanan, dan pengikatan kargo",
+                "Survei kondisi kargo dan pengawasan kargo",
+                "Penentuan kuantitas melalui sounding, penimbangan, tally, dan survei draft",
+                "Survei kontainer, minyak, dan bahan kimia",
+                "Pengambilan sampel kargo untuk analisis dan penentuan kualitas"
             ],
-            additionalPoints: [
-                "Pengujian laboratorium komprehensif",
-                "Pemantauan kualitas berkelanjutan"
-            ],
-            bgColor: "from-indigo-600 to-indigo-800"
-        },
-        {
-            icon: <FaClipboardCheck className="w-10 h-10 text-white" />,
-            title: "P&I Surveyor",
-            mainPoints: [
-                "Pemeriksaan dan investigasi klaim asuransi maritim.",
-                "Penilaian kerusakan kapal dan kargo."
-            ],
-            additionalPoints: [
-                "Analisis penyebab kerusakan",
-                "Rekomendasi pencegahan"
-            ],
-            bgColor: "from-cyan-600 to-cyan-800"
-        },
-        {
-            icon: <FaAnchor className="w-10 h-10 text-white" />,
-            title: "Marine Survey & Inspection",
-            mainPoints: [
-                "Inspeksi kondisi kapal secara menyeluruh.",
-                "Pemeriksaan kelaikan kapal sesuai standar internasional."
-            ],
-            additionalPoints: [
-                "Evaluasi sistem keselamatan",
-                "Sertifikasi kelayakan"
-            ],
-            bgColor: "from-blue-700 to-blue-900"
-        },
-        {
-            icon: <FaWrench className="w-10 h-10 text-white" />,
-            title: "Technical Consulting",
-            mainPoints: [
-                "Konsultasi teknis untuk operasional kapal.",
-                "Optimasi kinerja dan efisiensi sistem."
-            ],
-            additionalPoints: [
-                "Audit teknis berkala",
-                "Rekomendasi peningkatan"
-            ],
-            bgColor: "from-indigo-700 to-indigo-900"
-        },
-        {
-            icon: <FaChartLine className="w-10 h-10 text-white" />,
-            title: "Quality Management",
-            mainPoints: [
-                "Implementasi sistem manajemen mutu.",
-                "Audit dan sertifikasi standar ISO."
-            ],
-            additionalPoints: [
-                "Pelatihan personel",
-                "Pengembangan SOP"
-            ],
-            bgColor: "from-cyan-700 to-cyan-900"
+
+            bgColor: "from-indigo-600 to-indigo-800",
+            hoverColor: "group-hover:from-indigo-700 group-hover:to-indigo-900"
         }
     ];
 
     return (
-        <section className="relative py-24 bg-blue-900 overflow-visible">
-            {/* Wave background with proper z-index */}
-            <div className="absolute left-0 top-0 w-full" style={{ zIndex: 1 }}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="text-white" style={{ marginTop: -1 }}>
-                    <path fill="currentColor" fillOpacity="1" d="M0,224L80,229.3C160,235,320,245,480,218.7C640,192,800,128,960,117.3C1120,107,1280,149,1360,170.7L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-                </svg>
+        <section className="relative py-24 bg-gradient-to-b from-blue-900 to-blue-800 overflow-visible">
+            {/* Decorative elements */}
+            <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute top-0 left-1/2 w-96 h-96 -translate-x-1/2 -translate-y-1/2 bg-blue-500 rounded-full opacity-10 blur-3xl"></div>
+                <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-400 rounded-full opacity-10 blur-3xl"></div>
             </div>
-            
-            {/* Floating circles decoration with proper z-index */}
-            <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-blue-700 opacity-20 animate-pulse" style={{ zIndex: 2 }}></div>
-            <div className="absolute bottom-10 left-10 w-48 h-48 rounded-full bg-blue-600 opacity-20 animate-pulse" style={{ zIndex: 2 }}></div>
-            
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" style={{ zIndex: 10 }}>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                {/* Header Section */}
                 <div className="text-center mb-16">
-                    <motion.h2 
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
+                        transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="text-4xl font-bold text-white mb-4"
+                        className="mb-8"
                     >
-                        Layanan Kami
-                    </motion.h2>
-                    <motion.div 
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="w-24 h-1 bg-white mx-auto rounded-full mb-8"
-                    />
-                    <motion.div 
+                        <span className="inline-block px-4 py-1.5 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full mb-4">
+                            Our Services
+                        </span>
+                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                            Layanan Kami
+                        </h2>
+                        <div className="w-24 h-1.5 bg-gradient-to-r from-blue-200 to-blue-400 mx-auto rounded-full"></div>
+                    </motion.div>
+
+                    <motion.p
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="text-lg max-w-3xl mx-auto p-6 bg-blue-900/80 rounded-lg shadow-lg"
+                        className="text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed"
                     >
-                        <p className="text-white leading-relaxed drop-shadow-md">
-                            <span className="font-medium text-yellow-300">Kami menyediakan berbagai layanan profesional</span>{" "}
-                            <span className="text-blue-200">dalam industri maritim dengan</span>{" "}
-                            <span className="font-medium text-yellow-300">standar internasional</span>{" "}
-                            <span className="text-blue-200">dan komitmen untuk kualitas terbaik.</span>
-                        </p>
-                    </motion.div>
+                        Kami menyediakan layanan profesional dalam industri maritim dengan
+                        standar internasional dan komitmen untuk kualitas terbaik
+                    </motion.p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                {/* Services Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            transition={{ duration: 0.5, delay: index * 0.2 }}
                             viewport={{ once: true }}
-                            className="relative overflow-hidden rounded-2xl shadow-2xl group"
+                            className="group"
                         >
-                            <div className={`bg-gradient-to-br ${service.bgColor} p-8 h-full`}>
-                                <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 rounded-full bg-white opacity-10 group-hover:opacity-20 transition-opacity duration-500"></div>
-                                
-                                <div className="flex items-center mb-6">
-                                    <div className="p-3 rounded-full bg-white/10 mr-4">
-                                        {service.icon}
+                            <div className={`relative rounded-2xl overflow-hidden bg-gradient-to-br ${service.bgColor} transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl`}>
+                                {/* Decorative circle */}
+                                <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+
+                                <div className="relative p-8">
+                                    {/* Header */}
+                                    <div className="flex items-center space-x-6 mb-8">
+                                        <div className="p-3 bg-white/10 rounded-xl">
+                                            {service.icon}
+                                        </div>
+                                        <h3 className="text-2xl font-bold text-white">
+                                            {service.title}
+                                        </h3>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-white">
-                                        {service.title}
-                                    </h3>
+
+                                    {/* Main Points */}
+                                    <div className="space-y-4 mb-8">
+                                        {service.mainPoints.map((point, idx) => (
+                                            <div key={idx} className="flex items-start space-x-3">
+                                                <div className="flex-shrink-0 w-1.5 h-1.5 mt-2.5 rounded-full bg-white"></div>
+                                                <p className="text-blue-50 leading-relaxed">
+                                                    {point}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+
+
+
+                                    {/* Bottom gradient line */}
+                                    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
                                 </div>
-                                
-                                <div className="space-y-4 text-blue-50">
-                                    {service.mainPoints.map((point, idx) => (
-                                        <p key={idx} className="leading-relaxed">
-                                            {point}
-                                        </p>
-                                    ))}
-                                </div>
-                                
-                                <ul className="mt-6 space-y-2">
-                                    {service.additionalPoints.map((point, idx) => (
-                                        <li key={idx} className="flex items-center text-blue-100 text-sm">
-                                            <svg className="w-5 h-5 text-blue-300 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            {point}
-                                        </li>
-                                    ))}
-                                </ul>
-                                
-                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-white/0 via-white/50 to-white/0 opacity-30"></div>
                             </div>
                         </motion.div>
                     ))}
                 </div>
-            </div>
-            
-            {/* Bottom wave with proper z-index */}
-            <div className="absolute left-0 bottom-0 w-full" style={{ zIndex: 1 }}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="text-white" style={{ marginBottom: -1 }}>
-                    <path fill="currentColor" fillOpacity="1" d="M0,96L80,90.7C160,85,320,75,480,101.3C640,128,800,192,960,202.7C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-                </svg>
             </div>
         </section>
     );

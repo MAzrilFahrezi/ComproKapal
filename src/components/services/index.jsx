@@ -1,4 +1,4 @@
-import Services from './Services';
+import Services from './services';
 import Stats from './Stats';
 import Process from './Process';
 import Advantages from './Advantages';
@@ -9,7 +9,7 @@ export default function Home() {
             <Services />
             <Stats />
             <Process />
-            <Advantages />
+            {/* <Advantages /> */}
         </div>
     );
 }

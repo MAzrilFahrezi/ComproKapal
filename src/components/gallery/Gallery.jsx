@@ -8,45 +8,45 @@ export default function Gallery() {
     const images = [
         {
             id: 1,
-            src: "https://images.unsplash.com/photo-1606185540834-d6e7483ee1a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            category: "Marine Survey",
-            title: "Cargo Ship Inspection",
-            description: "Professional marine survey and inspection services"
+            src: "https://altitude.my/wp-content/uploads/2022/05/DS-2.jpg",
+            category: "Survei Kapal",
+            title: "Survei Draft",
+            description: "Layanan survei draft profesional untuk penentuan berat muatan"
         },
         {
             id: 2,
-            src: "https://www.norstar-group.com/wp-content/uploads/2021/07/20201104_182936-scaled.jpg?q=80&w=2070&auto=format&fit=crop",
-            category: "Technical Inspection",
-            title: "Equipment Check",
-            description: "Detailed technical inspection and maintenance"
+            src: "https://www.marineinsight.com/wp-content/uploads/2019/09/A-List-of-Inspections-And-Surveys-Deck-Officers-On-Ships-Should-Be-Aware-Of.png",
+            category: "Survei Kapal",
+            title: "Inspeksi Kondisi Kapal",
+            description: "Survei kondisi On/Off Hire untuk semua jenis kapal"
         },
         {
             id: 3,
-            src: "https://ajmcargo.co.id/wp-content/uploads/2022/02/pexels-kelly-l-6595774-1024x768.jpg?q=80&w=2070&auto=format&fit=crop",
-            category: "Cargo Handling",
-            title: "Port Operations",
-            description: "Efficient cargo handling and logistics"
+            src: "https://www.myseatime.com/blogadm/wp-content/uploads/2017/07/enhanced-survey-programme.jpg",
+            category: "Survei Kapal",
+            title: "Survei Kerusakan",
+            description: "Survei kondisi kerusakan kapal untuk klaim asuransi"
         },
         {
             id: 4,
-            src: "https://wayl.eu/media/ship-engineer.jpg?q=80&w=2070&auto=format&fit=crop",
-            category: "Quality Control",
-            title: "Quality Assurance",
-            description: "Comprehensive quality control processes"
+            src: "https://5.imimg.com/data5/SELLER/Default/2021/3/MZ/GC/KU/10002048/container-inspection-services-500x500.jpg",
+            category: "Survei Kargo",
+            title: "Inspeksi Bongkar Muat",
+            description: "Survei dan inspeksi proses bongkar muat kargo"
         },
         {
             id: 5,
-            src: "https://vesselstatistics.com/wp-content/uploads/2019/10/inspection-2-720x441.jpg?q=80&w=2074&auto=format&fit=crop",
-            category: "Marine Survey",
-            title: "Vessel Inspection",
-            description: "Thorough vessel inspection services"
+            src: "https://www.marineinsight.com/wp-content/uploads/2021/05/container-surveyor-1.png",
+            category: "Survei Kargo",
+            title: "Survei Pra-pengiriman",
+            description: "Pemeriksaan menyeluruh sebelum pengiriman kargo"
         },
         {
             id: 6,
-            src: "https://www.camcode.com/wp-content/uploads/2022/11/Ship-Maintenance-2.jpg?q=80&w=2070&auto=format&fit=crop",
-            category: "Technical Service",
-            title: "Equipment Maintenance",
-            description: "Professional equipment maintenance"
+            src: "https://sunartha.co.id/wp-content/uploads/2024/02/SUNARTHA-Bagaimana-ERP-Dukung-Keamanan-Ekspedisi-Cargo-Laut-1200x800.jpg",
+            category: "Survei Kargo",
+            title: "Pengawasan Penataan",
+            description: "Pengawasan penataan, pengamanan, dan pengikatan kargo"
         }
     ];
 
