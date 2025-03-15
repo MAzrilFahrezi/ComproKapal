@@ -20,6 +20,7 @@ function classNames(...classes) {
 export default function Navbar() {
     const location = useLocation();
     const [scrolled, setScrolled] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,6 +41,10 @@ export default function Navbar() {
             ...item,
             current: item.href === location.pathname
         }));
+    };
+
+    const handleLanguageChange = (lang) => {
+        // Logika untuk mengubah bahasa
     };
 
     return (
@@ -122,6 +127,26 @@ export default function Navbar() {
                                     >
                                         Hubungi Kami
                                     </motion.a>
+                                    <div className="ml-4">
+                                        <div className="relative">
+                                            <button 
+                                                className="flex items-center text-gray-600 hover:text-blue-900 focus:outline-none"
+                                                onClick={() => setDropdownOpen(!dropdownOpen)}
+                                            >
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Indonesia" className="h-5 w-5" />
+                                            </button>
+                                            {dropdownOpen && (
+                                                <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+                                                    <button 
+                                                        className="flex items-center w-full px-4 py-2 text-gray-600 hover:bg-gray-100"
+                                                        onClick={() => handleLanguageChange('en')}
+                                                    >
+                                                        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" className="h-5 w-5" />
+                                                    </button>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="-mr-2 flex md:hidden">
                                     <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:text-blue-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-900 focus:ring-offset-2">
