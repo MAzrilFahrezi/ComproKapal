@@ -1,54 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Gallery() {
+    const { translate } = useLanguage();
     const [selectedImage, setSelectedImage] = useState(null);
 
-    const images = [
-        {
-            id: 1,
-            src: "https://altitude.my/wp-content/uploads/2022/05/DS-2.jpg",
-            category: "Survei Kapal",
-            title: "Survei Draft",
-            description: "Layanan survei draft profesional untuk penentuan berat muatan"
-        },
-        {
-            id: 2,
-            src: "https://www.marineinsight.com/wp-content/uploads/2019/09/A-List-of-Inspections-And-Surveys-Deck-Officers-On-Ships-Should-Be-Aware-Of.png",
-            category: "Survei Kapal",
-            title: "Inspeksi Kondisi Kapal",
-            description: "Survei kondisi On/Off Hire untuk semua jenis kapal"
-        },
-        {
-            id: 3,
-            src: "https://www.myseatime.com/blogadm/wp-content/uploads/2017/07/enhanced-survey-programme.jpg",
-            category: "Survei Kapal",
-            title: "Survei Kerusakan",
-            description: "Survei kondisi kerusakan kapal untuk klaim asuransi"
-        },
-        {
-            id: 4,
-            src: "https://5.imimg.com/data5/SELLER/Default/2021/3/MZ/GC/KU/10002048/container-inspection-services-500x500.jpg",
-            category: "Survei Kargo",
-            title: "Inspeksi Bongkar Muat",
-            description: "Survei dan inspeksi proses bongkar muat kargo"
-        },
-        {
-            id: 5,
-            src: "https://www.marineinsight.com/wp-content/uploads/2021/05/container-surveyor-1.png",
-            category: "Survei Kargo",
-            title: "Survei Pra-pengiriman",
-            description: "Pemeriksaan menyeluruh sebelum pengiriman kargo"
-        },
-        {
-            id: 6,
-            src: "https://sunartha.co.id/wp-content/uploads/2024/02/SUNARTHA-Bagaimana-ERP-Dukung-Keamanan-Ekspedisi-Cargo-Laut-1200x800.jpg",
-            category: "Survei Kargo",
-            title: "Pengawasan Penataan",
-            description: "Pengawasan penataan, pengamanan, dan pengikatan kargo"
-        }
-    ];
+    // Mengambil data gambar dari terjemahan
+    const images = translate('galeri.galleryImages');
 
     return (
         <div className="min-h-screen bg-gray-50">
@@ -71,10 +31,10 @@ export default function Gallery() {
                         className="text-center"
                     >
                         <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            Galeri Proyek
+                            {translate('galeri.title')}
                         </h1>
                         <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-                            Dokumentasi visual dari berbagai proyek dan layanan yang telah kami kerjakan
+                            {translate('galeri.description')}
                         </p>
                     </motion.div>
                 </div>
@@ -84,7 +44,7 @@ export default function Gallery() {
             <section className="py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {images.map((image, index) => (
+                        {images && images.map((image, index) => (
                             <motion.div
                                 key={image.id}
                                 initial={{ opacity: 0, y: 20 }}

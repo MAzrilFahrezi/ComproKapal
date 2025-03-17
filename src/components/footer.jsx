@@ -1,3 +1,5 @@
+import { useLanguage } from '../context/LanguageContext';
+
 const navigation = [
     { name: 'Beranda', href: '/' },
     { name: 'Tentang Kami', href: '/about' },
@@ -7,14 +9,18 @@ const navigation = [
 ];
 
 export default function Footer() {
+    const { translate } = useLanguage();
+    const navigation = translate('footer.navigation.items');
+    const services = translate('footer.services.items');
+
     return (
         <footer className="bg-gray-900 text-white pt-12 pb-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Company Info */}
                     <div className="col-span-1 md:col-span-1">
-                        <h3 className="text-xl font-bold mb-4">PT. Orionindo Jaya Ocean</h3>
-                        <p className="text-gray-300 mb-4">Solusi terbaik untuk kebutuhan perkapalan Anda dengan standar kualitas internasional.</p>
+                        <h3 className="text-xl font-bold mb-4">{translate('footer.company.name')}</h3>
+                        <p className="text-gray-300 mb-4">{translate('footer.company.description')}</p>
                         <div className="flex space-x-4 mt-4">
                             <a href="#" className="text-white hover:text-blue-300 transition-colors duration-200">
                                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -41,7 +47,7 @@ export default function Footer() {
 
                     {/* Quick Links */}
                     <div className="col-span-1">
-                        <h3 className="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                        <h3 className="text-lg font-semibold mb-4">{translate('footer.navigation.title')}</h3>
                         <ul className="space-y-2">
                             {navigation.map((item) => (
                                 <li key={item.name}>
@@ -55,37 +61,40 @@ export default function Footer() {
 
                     {/* Services */}
                     <div className="col-span-1">
-                        <h3 className="text-lg font-semibold mb-4">Layanan</h3>
+                        <h3 className="text-lg font-semibold mb-4">{translate('footer.services.title')}</h3>
                         <ul className="space-y-2">
-                            <li><a href="/services" className="text-gray-300 hover:text-white transition-colors duration-200">Pembuatan Kapal</a></li>
-                            <li><a href="/services" className="text-gray-300 hover:text-white transition-colors duration-200">Perbaikan Kapal</a></li>
-                            <li><a href="/services" className="text-gray-300 hover:text-white transition-colors duration-200">Modernisasi Kapal</a></li>
-                            <li><a href="/services" className="text-gray-300 hover:text-white transition-colors duration-200">Konsultasi Teknis</a></li>
+                            {services.map((service) => (
+                                <li key={service.name}>
+                                    <a href={service.href} className="text-gray-300 hover:text-white transition-colors duration-200">
+                                        {service.name}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Contact Info */}
                     <div className="col-span-1">
-                        <h3 className="text-lg font-semibold mb-4">Kontak Kami</h3>
+                        <h3 className="text-lg font-semibold mb-4">{translate('footer.contact.title')}</h3>
                         <div className="space-y-3">
                             <p className="text-gray-300 flex items-start">
-                                <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
-                                Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia
+                                {translate('footer.contact.address')}
                             </p>
                             <p className="text-gray-300 flex items-start">
-                                <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
-                                operation@orionindo.com
+                                {translate('footer.contact.email')}
                             </p>
                             <p className="text-gray-300 flex items-start">
-                                <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <svg className="h-5 w-5 mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                                 </svg>
-                                (021) 1234-5678
+                                {translate('footer.contact.phone')}
                             </p>
                         </div>
                     </div>
@@ -93,11 +102,11 @@ export default function Footer() {
 
                 <div className="border-t border-blue-700 mt-10 pt-6">
                     <div className="flex flex-col md:flex-row justify-between items-center">
-                        <p className="text-gray-300 text-sm">&copy; {new Date().getFullYear()} PT. Orionindo Jaya Ocean. Hak Cipta Dilindungi.</p>
+                        <p className="text-gray-300 text-sm">{translate('footer.bottom.copyright')}</p>
                         <div className="mt-4 md:mt-0">
                             <ul className="flex space-x-4 text-sm">
-                                <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-200">Kebijakan Privasi</a></li>
-                                <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-200">Syarat & Ketentuan</a></li>
+                                <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-200">{translate('footer.bottom.links.privacy')}</a></li>
+                                <li><a href="#" className="text-gray-300 hover:text-white transition-colors duration-200">{translate('footer.bottom.links.terms')}</a></li>
                             </ul>
                         </div>
                     </div>

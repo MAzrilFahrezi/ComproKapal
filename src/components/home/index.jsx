@@ -10,8 +10,8 @@ export default function Home() {
         <div>
             <ImageSlider />
             <AboutCompany />
-            <Features />
             <Services />
+            <Features />
             {/* <Advantages /> */}
             <Partners />
         </div>

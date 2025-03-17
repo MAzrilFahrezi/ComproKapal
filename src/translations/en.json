@@ -268,5 +268,122 @@
         ]
       }
     ]
+  },
+  "galeri": {
+    "title": "Our Gallery",
+    "description": "Explore our collection of projects and services that showcase our commitment to excellence.",
+    "galleryImages": [
+      {
+        "id": 1,
+        "src": "https://altitude.my/wp-content/uploads/2022/05/DS-2.jpg",
+        "category": "Ship Survey",
+        "title": "Draft Survey",
+        "description": "Professional draft survey services for determining cargo weight."
+      },
+      {
+        "id": 2,
+        "src": "https://www.marineinsight.com/wp-content/uploads/2019/09/A-List-of-Inspections-And-Surveys-Deck-Officers-On-Ships-Should-Be-Aware-Of.png",
+        "category": "Ship Survey",
+        "title": "Condition Inspection",
+        "description": "Condition survey for On/Off Hire for all types of vessels."
+      },
+      {
+        "id": 3,
+        "src": "https://www.myseatime.com/blogadm/wp-content/uploads/2017/07/enhanced-survey-programme.jpg",
+        "category": "Ship Survey",
+        "title": "Damage Survey",
+        "description": "Survey of vessel damage for insurance claims."
+      },
+      {
+        "id": 4,
+        "src": "https://5.imimg.com/data5/SELLER/Default/2021/3/MZ/GC/KU/10002048/container-inspection-services-500x500.jpg",
+        "category": "Cargo Survey",
+        "title": "Loading Inspection",
+        "description": "Survey and inspection of the cargo loading process."
+      },
+      {
+        "id": 5,
+        "src": "https://www.marineinsight.com/wp-content/uploads/2021/05/container-surveyor-1.png",
+        "category": "Cargo Survey",
+        "title": "Pre-shipment Survey",
+        "description": "Thorough inspection before cargo shipment."
+      },
+      {
+        "id": 6,
+        "src": "https://sunartha.co.id/wp-content/uploads/2024/02/SUNARTHA-Bagaimana-ERP-Dukung-Keamanan-Ekspedisi-Cargo-Laut-1200x800.jpg",
+        "category": "Cargo Survey",
+        "title": "Stowage Supervision",
+        "description": "Supervision of stowage, securing, and lashing of cargo."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "label": "Address",
+        "value": "Jl. Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+62 31 1234 5678"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@perusahaankapal.com"
+      }
+    },
+    "form": {
+      "title": "Send Message",
+      "name": {
+        "label": "Name"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "message": {
+        "label": "Message"
+      },
+      "button": "Send Message"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "PT. Orionindo Jaya Ocean",
+      "description": "The best solution for your shipping needs with international quality standards."
+    },
+    "navigation": {
+      "title": "Quick Links",
+      "items": [
+        { "name": "Home", "href": "/" },
+        { "name": "About Us", "href": "/about" },
+        { "name": "Services", "href": "/services" },
+        { "name": "Gallery", "href": "/gallery" },
+        { "name": "Contact", "href": "/contact" }
+      ]
+    },
+    "services": {
+      "title": "Services",
+      "items": [
+        { "name": "Ship Building", "href": "/services" },
+        { "name": "Ship Repair", "href": "/services" },
+        { "name": "Ship Modernization", "href": "/services" },
+        { "name": "Technical Consultation", "href": "/services" }
+      ]
+    },
+    "contact": {
+      "title": "Contact Us",
+      "address": "Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia",
+      "email": "operation@orionindo.com",
+      "phone": "(021) 1234-5678"
+    },
+    "bottom": {
+      "copyright": "© 2024 PT. Orionindo Jaya Ocean. All Rights Reserved.",
+      "links": {
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions"
+      }
+    }
   }
 }

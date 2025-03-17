@@ -269,5 +269,122 @@
         ]
       }
     ]
+  },
+  "galeri": {
+    "title": "Galeri Kami",
+    "description": "Jelajahi koleksi proyek dan layanan kami yang menunjukkan komitmen kami terhadap keunggulan.",
+    "galleryImages": [
+      {
+        "id": 1,
+        "src": "https://altitude.my/wp-content/uploads/2022/05/DS-2.jpg",
+        "category": "Survei Kapal",
+        "title": "Survei Draft",
+        "description": "Layanan survei draft profesional untuk penentuan berat muatan."
+      },
+      {
+        "id": 2,
+        "src": "https://www.marineinsight.com/wp-content/uploads/2019/09/A-List-of-Inspections-And-Surveys-Deck-Officers-On-Ships-Should-Be-Aware-Of.png",
+        "category": "Survei Kapal",
+        "title": "Inspeksi Kondisi",
+        "description": "Survei kondisi On/Off Hire untuk semua jenis kapal."
+      },
+      {
+        "id": 3,
+        "src": "https://www.myseatime.com/blogadm/wp-content/uploads/2017/07/enhanced-survey-programme.jpg",
+        "category": "Survei Kapal",
+        "title": "Survei Kerusakan",
+        "description": "Survei kondisi kerusakan kapal untuk klaim asuransi."
+      },
+      {
+        "id": 4,
+        "src": "https://5.imimg.com/data5/SELLER/Default/2021/3/MZ/GC/KU/10002048/container-inspection-services-500x500.jpg",
+        "category": "Survei Kargo",
+        "title": "Inspeksi Bongkar Muat",
+        "description": "Survei dan inspeksi proses bongkar muat kargo."
+      },
+      {
+        "id": 5,
+        "src": "https://www.marineinsight.com/wp-content/uploads/2021/05/container-surveyor-1.png",
+        "category": "Survei Kargo",
+        "title": "Survei Pra-pengiriman",
+        "description": "Pemeriksaan menyeluruh sebelum pengiriman kargo."
+      },
+      {
+        "id": 6,
+        "src": "https://sunartha.co.id/wp-content/uploads/2024/02/SUNARTHA-Bagaimana-ERP-Dukung-Keamanan-Ekspedisi-Cargo-Laut-1200x800.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengawasan Penataan",
+        "description": "Pengawasan penataan, pengamanan, dan pengikatan kargo."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "info": {
+      "title": "Informasi Kontak",
+      "address": {
+        "label": "Alamat",
+        "value": "Jl. Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia"
+      },
+      "phone": {
+        "label": "Telepon",
+        "value": "+62 31 1234 5678"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@perusahaankapal.com"
+      }
+    },
+    "form": {
+      "title": "Kirim Pesan",
+      "name": {
+        "label": "Nama"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "message": {
+        "label": "Pesan"
+      },
+      "button": "Kirim Pesan"
+    }
+  },
+  "footer": {
+    "company": {
+      "name": "PT. Orionindo Jaya Ocean",
+      "description": "Solusi terbaik untuk kebutuhan pelayaran Anda dengan standar kualitas internasional."
+    },
+    "navigation": {
+      "title": "Tautan Cepat",
+      "items": [
+        { "name": "Beranda", "href": "/" },
+        { "name": "Tentang Kami", "href": "/about" },
+        { "name": "Layanan", "href": "/services" },
+        { "name": "Galeri", "href": "/gallery" },
+        { "name": "Kontak", "href": "/contact" }
+      ]
+    },
+    "services": {
+      "title": "Layanan",
+      "items": [
+        { "name": "Pembangunan Kapal", "href": "/services" },
+        { "name": "Perbaikan Kapal", "href": "/services" },
+        { "name": "Modernisasi Kapal", "href": "/services" },
+        { "name": "Konsultasi Teknis", "href": "/services" }
+      ]
+    },
+    "contact": {
+      "title": "Hubungi Kami",
+      "address": "Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia",
+      "email": "operation@orionindo.com",
+      "phone": "(021) 1234-5678"
+    },
+    "bottom": {
+      "copyright": "© 2024 PT. Orionindo Jaya Ocean. Hak Cipta Dilindungi.",
+      "links": {
+        "privacy": "Kebijakan Privasi",
+        "terms": "Syarat & Ketentuan"
+      }
+    }
   }
 }
