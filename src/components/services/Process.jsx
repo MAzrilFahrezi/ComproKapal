@@ -1,26 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Process() {
+    const { translate } = useLanguage();
+
     const processes = [
         {
-            title: "Konsultasi Awal",
-            description: "Diskusi mendalam tentang kebutuhan dan spesifikasi proyek Anda",
+            title: translate('process.processes.0.title'),
+            description: translate('process.processes.0.description'),
             icon: "🤝"
         },
         {
-            title: "Perencanaan",
-            description: "Penyusunan rencana detail dan timeline proyek",
+            title: translate('process.processes.1.title'),
+            description: translate('process.processes.1.description'),
             icon: "📋"
         },
         {
-            title: "Eksekusi",
-            description: "Pelaksanaan proyek dengan standar kualitas tinggi",
+            title: translate('process.processes.2.title'),
+            description: translate('process.processes.2.description'),
             icon: "⚙️"
         },
         {
-            title: "Quality Control",
-            description: "Pemeriksaan menyeluruh untuk memastikan hasil terbaik",
+            title: translate('process.processes.3.title'),
+            description: translate('process.processes.3.description'),
             icon: "✓"
         }
     ];
@@ -41,11 +44,11 @@ export default function Process() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                        Proses Kerja Kami
+                        {translate('process.title')}
                     </h2>
                     <div className="w-24 h-1 bg-blue-400 mx-auto rounded-full mb-8"></div>
                     <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-                        Pendekatan sistematis kami memastikan setiap proyek berjalan efisien dan memberikan hasil terbaik
+                        {translate('process.description')}
                     </p>
                 </motion.div>
 

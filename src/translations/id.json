@@ -201,5 +201,73 @@
       "title": "Kolaborasi Tim yang Kuat",
       "description": "Tim kami bekerja sama dengan lancar untuk memberikan layanan maritim yang luar biasa dengan standar profesionalisme dan keahlian tertinggi."
     }
+  },
+  "process": {
+    "title": "Proses Kerja Kami",
+    "description": "Pendekatan sistematis kami memastikan setiap proyek berjalan efisien dan memberikan hasil terbaik.",
+    "processes": [
+      {
+        "title": "Konsultasi Awal",
+        "description": "Diskusi mendalam tentang kebutuhan dan spesifikasi proyek Anda",
+        "icon": "🤝"
+      },
+      {
+        "title": "Perencanaan",
+        "description": "Penyusunan rencana detail dan timeline proyek",
+        "icon": "📋"
+      },
+      {
+        "title": "Eksekusi",
+        "description": "Pelaksanaan proyek dengan standar kualitas tinggi",
+        "icon": "⚙️"
+      },
+      {
+        "title": "Quality Control",
+        "description": "Pemeriksaan menyeluruh untuk memastikan hasil terbaik",
+        "icon": "✓"
+      }
+    ]
+  },
+  "box": {
+    "content": {
+      "title": "Pencapaian Kami",
+      "description": "Komitmen kami untuk memberikan layanan terbaik telah menghasilkan berbagai pencapaian yang membanggakan. Dengan pengalaman lebih dari 15 tahun dalam industri maritim, kami telah dipercaya oleh berbagai perusahaan terkemuka di Indonesia." 
+    }
+  },
+  "services2": {
+    "title": "Layanan Kami",
+    "description": "Solusi lengkap untuk kebutuhan perkapalan Anda dengan standar kualitas internasional.",
+    "header": "Solusi Profesional",
+    "subheader": "Memberikan layanan survei berkualitas tinggi dengan standar internasional.",
+    "services": [
+      {
+        "title": "Survei Kapal",
+        "description": "Layanan survei kapal komprehensif untuk memastikan kelaikan dan keamanan operasional dengan standar internasional.",
+        "features": [
+          "Survei Draft",
+          "Survei Kondisi On/Off Hire untuk Semua Jenis Kapal",
+          "Survei Kondisi Kerusakan Kapal untuk Klaim Asuransi",
+          "Inspeksi Pra-Charter dan Pra-Pembelian Kapal",
+          "Inspeksi Kondisi Umum Lambung dan Mesin",
+          "Survei Bunker",
+          "Survei Towing dan Lashing",
+          "Investigasi Perlindungan dan Hal-hal Terkait Club Indemnity"
+        ]
+      },
+      {
+        "title": "Survei Kargo",
+        "description": "Memfasilitasi pelaksanaan transaksi yang cepat dan efisien, meningkatkan keamanan dan keandalan, serta mencegah gangguan jadwal pengiriman.",
+        "features": [
+          "Survei/inspeksi bongkar muat",
+          "Survei pra-pengiriman",
+          "Survei pra-pembongkaran",
+          "Pengawasan penataan, pengamanan, dan pengikatan kargo",
+          "Survei kondisi kargo dan pengawasan kargo",
+          "Penentuan kuantitas melalui sounding, penimbangan, tally, dan survei draft",
+          "Survei kontainer, minyak, dan bahan kimia",
+          "Pengambilan sampel kargo untuk analisis dan penentuan kualitas"
+        ]
+      }
+    ]
   }
 }
