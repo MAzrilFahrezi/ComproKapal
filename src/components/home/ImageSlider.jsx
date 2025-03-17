@@ -2,63 +2,66 @@ import { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-const images = [
-  {
-    url: 'https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?q=80&w=1974&auto=format&fit=crop&q=80',
-    title: 'Survey Dan Verifikasi',
-    subtitle: 'Layanan Inspeksi Profesional',
-    description: 'Layanan survey dan verifikasi kami mencakup berbagai aspek industri maritim dengan standar internasional untuk memastikan keamanan dan kepatuhan.'
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1563119162-b3a3fcf67f8a?q=80&w=2070&auto=format&fit=crop&q=80',
-    title: 'Layanan Survey Kapal',
-    subtitle: 'Tim Ahli & Peralatan Terkini',
-    description: 'Didukung oleh tim profesional berpengalaman dan peralatan modern untuk memberikan layanan survey kapal terbaik.'
-  },
-  {
-    url: 'https://images.unsplash.com/photo-1595587637401-83ff822bd63e?q=80&w=2101&auto=format&fit=crop&q=80',
-    title: 'Layanan Survey Kargo',
-    subtitle: 'Kualitas & Kehandalan Terjamin',
-    description: 'Menyediakan solusi lengkap untuk kebutuhan perkapalan Anda dengan standar kualitas tertinggi dan jaminan kehandalan.'
-  }
-];
-
-const NextArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group"
-    aria-label="Next slide"
-  >
-    <svg
-      className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-    </svg>
-  </button>
-);
-
-const PrevArrow = ({ onClick }) => (
-  <button
-    onClick={onClick}
-    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group"
-    aria-label="Previous slide"
-  >
-    <svg
-      className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-    </svg>
-  </button>
-);
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function ImageSlider() {
+  const { translate, currentLanguage } = useLanguage();
+
+  const images = [
+    {
+      url: 'https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?q=80&w=1974&auto=format&fit=crop&q=80',
+      title: translate('home.slider.slide1.title'),
+      subtitle: translate('home.slider.slide1.subtitle'),
+      description: translate('home.slider.slide1.description')
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1563119162-b3a3fcf67f8a?q=80&w=2070&auto=format&fit=crop&q=80',
+      title: translate('home.slider.slide2.title'),
+      subtitle: translate('home.slider.slide2.subtitle'),
+      description: translate('home.slider.slide2.description')
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1595587637401-83ff822bd63e?q=80&w=2101&auto=format&fit=crop&q=80',
+      title: translate('home.slider.slide3.title'),
+      subtitle: translate('home.slider.slide3.subtitle'),
+      description: translate('home.slider.slide3.description')
+    }
+  ];
+
+  const NextArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group"
+      aria-label="Next slide"
+    >
+      <svg
+        className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  );
+
+  const PrevArrow = ({ onClick }) => (
+    <button
+      onClick={onClick}
+      className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-3 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 group"
+      aria-label="Previous slide"
+    >
+      <svg
+        className="w-6 h-6 text-white group-hover:scale-110 transition-transform duration-300"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+  );
+
   const settings = {
     dots: true,
     infinite: true,
@@ -78,9 +81,7 @@ export default function ImageSlider() {
 
   return (
     <>
-      {/* Main slider with proper z-index handling */}
       <div className="relative w-full h-screen overflow-hidden">
-        {/* Background pattern with proper z-index */}
         <div className="absolute inset-0 bg-[url('/ship-pattern.png')] opacity-10" style={{ zIndex: 1 }}></div>
 
         <Slider {...settings}>
@@ -95,8 +96,7 @@ export default function ImageSlider() {
               </div>
               <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto" style={{ zIndex: 10 }}>
                 <div
-                  className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                    }`}
+                  className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 >
                   <h2
                     className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-lg"
@@ -118,13 +118,13 @@ export default function ImageSlider() {
                       href="/contact"
                       className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
                     >
-                      Hubungi Kami
+                      {currentLanguage === 'id' ? 'Hubungi Kami' : 'Contact Us'}
                     </a>
                     <a
                       href="/services"
                       className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
                     >
-                      Layanan Kami
+                      {currentLanguage === 'id' ? 'Layanan Kami' : 'Our Services'}
                     </a>
                   </div>
                 </div>
@@ -133,7 +133,6 @@ export default function ImageSlider() {
           ))}
         </Slider>
 
-        {/* Custom slider dots style with proper z-index */}
         <style jsx="true">{`
           :global(.slick-dots) {
             bottom: 20px;

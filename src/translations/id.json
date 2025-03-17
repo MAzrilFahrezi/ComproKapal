@@ -1,0 +1,205 @@
+{
+  "home": {
+    "slider": {
+      "slide1": {
+        "title": "Keunggulan Survei Maritim",
+        "subtitle": "Layanan Survei Kapal Profesional",
+        "description": "Penyedia terkemuka layanan survei kapal komprehensif dengan standar dan keahlian internasional."
+      },
+      "slide2": {
+        "title": "Solusi Inspeksi Kargo",
+        "subtitle": "Survei & Inspeksi Kargo Ahli",
+        "description": "Memastikan keamanan dan kepatuhan kargo melalui inspeksi menyeluruh dan dokumentasi profesional."
+      },
+      "slide3": {
+        "title": "Jaminan Kualitas Terjamin",
+        "subtitle": "Mitra Maritim Terpercaya",
+        "description": "Memberikan hasil survei yang andal dan akurat dengan komitmen untuk keunggulan."
+      }
+    },
+    "features": {
+      "title": "Fitur Unggulan",
+      "description": "Kami berkomitmen untuk memberikan layanan terbaik dengan standar internasional",
+      "safety": {
+        "title": "Keamanan Terjamin",
+        "description": "Mengutamakan keselamatan dan keamanan dalam setiap aspek layanan kami dengan standar internasional"
+      },
+      "efficiency": {
+        "title": "Efisiensi Tinggi",
+        "description": "Memberikan layanan cepat dan efisien untuk mengoptimalkan waktu dan sumber daya"
+      },
+      "innovation": {
+        "title": "Inovasi Berkelanjutan",
+        "description": "Selalu mengadopsi teknologi dan metode terbaru untuk meningkatkan kualitas layanan"
+      },
+      "cta": {
+        "title": "Siap Membantu Anda",
+        "description": "Hubungi kami untuk mendapatkan solusi terbaik sesuai kebutuhan Anda"
+      }
+    },
+    "services": {
+      "title": "Layanan Kami",
+      "subtitle": "Layanan Kami",
+      "description": "Kami menyediakan layanan profesional dalam industri maritim dengan standar internasional dan komitmen untuk kualitas terbaik",
+      "shipSurvey": {
+        "title": "Survei Kapal",
+        "description": "Memberikan solusi yang memastikan klaim dibayar, kerusakan diperbaiki, kapal kembali beroperasi, dan meminimalkan risiko.",
+        "points": [
+          "Survei Draft",
+          "Survei Kondisi On/Off Hire untuk Semua Jenis Kapal",
+          "Survei Kondisi Kerusakan Kapal untuk Klaim Asuransi",
+          "Inspeksi Pra-Charter dan Pra-Pembelian Kapal",
+          "Inspeksi Kondisi Umum Lambung dan Mesin",
+          "Survei Bunker",
+          "Survei Towing dan Lashing",
+          "Investigasi Perlindungan dan Hal-hal Terkait Club Indemnity"
+        ]
+      },
+      "cargoSurvey": {
+        "title": "Survei Kargo",
+        "description": "Memfasilitasi pelaksanaan transaksi yang cepat dan efisien, meningkatkan keamanan dan keandalan, serta mencegah gangguan jadwal pengiriman.",
+        "points": [
+          "Survei/inspeksi bongkar muat",
+          "Survei pra-pengiriman",
+          "Survei pra-pembongkaran",
+          "Pengawasan penataan, pengamanan, dan pengikatan kargo",
+          "Survei kondisi kargo dan pengawasan kargo",
+          "Penentuan kuantitas melalui sounding, penimbangan, tally, dan survei draft",
+          "Survei kontainer, minyak, dan bahan kimia",
+          "Pengambilan sampel kargo untuk analisis dan penentuan kualitas"
+        ]
+      }
+    },
+    "advantages": {
+      "title": "Mengapa Memilih Kami",
+      "subtitle": "Keunggulan Kami",
+      "description": "Dengan pengalaman dan keahlian yang kami miliki, kami menawarkan berbagai keunggulan untuk memenuhi kebutuhan bisnis maritim Anda dengan standar internasional.",
+      "items": [
+        {
+          "title": "Profesional & Berpengalaman",
+          "description": "Tim kami terdiri dari para ahli dengan pengalaman bertahun-tahun dalam industri maritim dan energi."
+        },
+        {
+          "title": "Akurasi & Kepatuhan",
+          "description": "Setiap inspeksi dilakukan dengan standar tertinggi, mengikuti regulasi nasional dan internasional."
+        },
+        {
+          "title": "Pelayanan Cepat & Efisien",
+          "description": "Kami memahami pentingnya waktu dalam bisnis Anda dan berkomitmen memberikan hasil yang cepat dan akurat."
+        },
+        {
+          "title": "Jaringan Luas",
+          "description": "Dengan koneksi yang kuat di industri, kami siap memberikan layanan terbaik di berbagai lokasi."
+        },
+        {
+          "title": "Teknologi Modern",
+          "description": "Menggunakan peralatan dan teknologi terkini untuk memastikan hasil inspeksi yang akurat dan efisien."
+        },
+        {
+          "title": "Jaminan Kualitas",
+          "description": "Memberikan jaminan kualitas terbaik untuk setiap layanan yang kami berikan dengan standar internasional."
+        }
+      ]
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "companyName": "PT Orionindo Jaya Ocean",
+      "description1": "Kami adalah perusahaan terdepan dalam bidang jasa Cargo Marine Inquiry, Petroleum & Chemical Inspection, dan P&I Surveyor. Dengan pengalaman lebih dari 15 tahun, kami telah melayani berbagai kebutuhan industri maritim dan energi dengan standar internasional.",
+      "description2": "Berbasis di Palembang, Indonesia, kami hadir untuk memastikan kelancaran serta keamanan dalam setiap aktivitas operasional klien kami. Dengan tim ahli yang berpengalaman dan peralatan modern, kami menjamin kualitas layanan terbaik untuk setiap proyek yang kami tangani.",
+      "description": "Kami adalah perusahaan terdepan dalam bidang jasa Cargo Marine Inquiry, Petroleum & Chemical Inspection, dan P&I Surveyor. Berdiri dengan komitmen untuk memberikan layanan inspeksi dan konsultasi yang profesional, kami melayani berbagai kebutuhan industri maritim dan energi dengan standar internasional.",
+      "location": "Berbasis di Palembang, Indonesia, kami hadir untuk memastikan kelancaran serta keamanan dalam setiap aktivitas operasional klien kami. Dengan tim ahli yang berpengalaman dan peralatan modern, kami menjamin kualitas layanan terbaik untuk setiap proyek yang kami tangani.",
+      "stats": {
+        "experience": "Tahun Pengalaman",
+        "projects": "Proyek Selesai",
+        "satisfaction": "Kepuasan Klien"
+      }
+    },
+    "partners": {
+      "title": "Klien & Mitra Kami",
+      "description": "PT. Orionindo Jaya Ocean telah bekerja sama dengan berbagai perusahaan terkemuka di sektor maritim dan energi. Kepercayaan yang diberikan oleh klien kami menjadi bukti komitmen kami dalam memberikan layanan terbaik dan profesional.",
+      "testimonials": {
+        "title": "Apa Kata Mereka",
+        "items": [
+          {
+            "name": "Budi Santoso",
+            "role": "Direktur Operasional",
+            "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2940&auto=format&fit=crop",
+            "company": "PT Pertamina Shipping",
+            "quote": "Orionindo telah menjadi mitra yang sangat dapat diandalkan dalam inspeksi dan survei kapal kami. Profesionalisme dan keahlian mereka sangat luar biasa."
+          },
+          {
+            "name": "Linda Wijaya",
+            "role": "Manajer Teknis",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2961&auto=format&fit=crop",
+            "company": "Pelindo Marine Services",
+            "quote": "Kami sangat terkesan dengan standar tinggi dan ketepatan waktu dalam setiap proyek yang ditangani oleh tim Orionindo."
+          }
+        ]
+      },
+      "collaboration": {
+        "title": "Kolaborasi yang Kuat",
+        "description": "Kami bangga telah menjalin kemitraan dengan berbagai perusahaan terkemuka dalam industri maritim dan energi. Setiap kerjasama kami dibangun atas dasar kepercayaan, profesionalisme, dan komitmen untuk memberikan layanan terbaik."
+      },
+      "commitments": {
+        "security": {
+          "title": "Komitmen Keamanan",
+          "description": "Sebagai perusahaan yang bergerak di sektor maritim dan energi, kami berkomitmen untuk menjaga keamanan kerja serta mematuhi regulasi keselamatan internasional dalam setiap aspek operasional kami."
+        },
+        "environmental": {
+          "title": "Komitmen Lingkungan",
+          "description": "Kami menerapkan prosedur yang ramah lingkungan dan berkomitmen untuk menjaga kelestarian lingkungan dalam setiap aktivitas operasional perusahaan."
+        }
+      },
+      "needHelp": {
+        "title": "Butuh Bantuan?",
+        "description": "Tim kami siap membantu Anda dengan solusi perkapalan yang sesuai dengan kebutuhan Anda",
+        "button": "Hubungi Kami Sekarang"
+      }
+    }
+  },
+  "about": {
+    "cover": {
+      "title": "Tentang PT Orionindo Jaya Ocean",
+      "subtitle": "Perusahaan di bidang jasa Cargo Marine Inquiry, Petroleum & Chemical Inspection dan P&I Surveyor"
+    },
+    "about": {
+      "title": "Tentang Kami",
+      "description": "Kami adalah perusahaan terkemuka dalam bidang jasa Cargo Marine Inquiry, Petroleum & Chemical Inspection, dan P&I Surveyor. Berdiri dengan komitmen untuk memberikan layanan inspeksi dan konsultasi yang profesional, kami melayani berbagai kebutuhan industri maritim dan energi dengan standar internasional."
+    },
+    "vision": {
+      "title": "Visi & Misi",
+      "vision_title": "Visi",
+      "vision_text": "Menjadi mitra terpercaya dalam industri maritim dan energi, dengan layanan inspeksi dan konsultasi yang profesional, inovatif, serta berbasis teknologi terkini.",
+      "mission_title": "Misi",
+      "mission_points": [
+        "Memberikan layanan inspeksi yang akurat dan terpercaya untuk memastikan kepatuhan terhadap regulasi internasional.",
+        "Mengutamakan kepuasan pelanggan dengan solusi yang tepat, cepat, dan efisien.",
+        "Mengembangkan SDM yang kompeten dan profesional di bidang marine cargo inspection serta chemical and petroleum survey.",
+        "Berinovasi dalam layanan berbasis teknologi untuk meningkatkan efisiensi dan akurasi."
+      ]
+    }
+  },
+  "team": {
+    "title": "Tim Kami",
+    "member1": {
+      "name": "John Smith",
+      "position": "CEO & Pendiri"
+    },
+    "member2": {
+      "name": "Sarah Johnson",
+      "position": "Direktur Teknis"
+    },
+    "member3": {
+      "name": "Michael Chen",
+      "position": "Manajer Operasional"
+    },
+    "member4": {
+      "name": "Emily Brown",
+      "position": "Surveyor Senior"
+    },
+    "collaboration": {
+      "title": "Kolaborasi Tim yang Kuat",
+      "description": "Tim kami bekerja sama dengan lancar untuk memberikan layanan maritim yang luar biasa dengan standar profesionalisme dan keahlian tertinggi."
+    }
+  }
+}

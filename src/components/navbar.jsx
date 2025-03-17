@@ -4,14 +4,7 @@ import { Bars3Icon, XMarkIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } 
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import logo from '../assets/logo.jpg';
-
-const navigation = [
-    { name: 'Beranda', href: '/', current: false },
-    { name: 'Tentang Kami', href: '/about', current: false },
-    { name: 'Layanan', href: '/services', current: false },
-    { name: 'Galeri', href: '/gallery', current: false },
-    { name: 'Kontak', href: '/contact', current: false },
-];
+import { useLanguage } from '../context/LanguageContext';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -21,6 +14,15 @@ export default function Navbar() {
     const location = useLocation();
     const [scrolled, setScrolled] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const { currentLanguage, toggleLanguage } = useLanguage();
+
+    const navigation = [
+        { name: currentLanguage === 'id' ? 'Beranda' : 'Home', href: '/', current: false },
+        { name: currentLanguage === 'id' ? 'Tentang Kami' : 'About Us', href: '/about', current: false },
+        { name: currentLanguage === 'id' ? 'Layanan' : 'Services', href: '/services', current: false },
+        { name: currentLanguage === 'id' ? 'Galeri' : 'Gallery', href: '/gallery', current: false },
+        { name: currentLanguage === 'id' ? 'Kontak' : 'Contact', href: '/contact', current: false },
+    ];
 
     useEffect(() => {
         const handleScroll = () => {
@@ -43,8 +45,9 @@ export default function Navbar() {
         }));
     };
 
-    const handleLanguageChange = (lang) => {
-        // Logika untuk mengubah bahasa
+    const handleLanguageChange = () => {
+        toggleLanguage();
+        setDropdownOpen(false);
     };
 
     return (
@@ -125,7 +128,7 @@ export default function Navbar() {
                                         whileHover={{ scale: 1.05 }}
                                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                                     >
-                                        Hubungi Kami
+                                        {currentLanguage === 'id' ? 'Hubungi Kami' : 'Contact Us'}
                                     </motion.a>
                                     <div className="ml-4">
                                         <div className="relative">
@@ -133,15 +136,28 @@ export default function Navbar() {
                                                 className="flex items-center text-gray-600 hover:text-blue-900 focus:outline-none"
                                                 onClick={() => setDropdownOpen(!dropdownOpen)}
                                             >
-                                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Indonesia" className="h-5 w-5" />
+                                                <img 
+                                                    src={currentLanguage === 'id' ? 
+                                                        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" : 
+                                                        "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" } 
+                                                    alt={currentLanguage === 'id' ? "Indonesia" : "English"} 
+                                                    className="h-5 w-5" 
+                                                />
                                             </button>
                                             {dropdownOpen && (
                                                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
                                                     <button 
                                                         className="flex items-center w-full px-4 py-2 text-gray-600 hover:bg-gray-100"
-                                                        onClick={() => handleLanguageChange('en')}
+                                                        onClick={handleLanguageChange}
                                                     >
-                                                        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" className="h-5 w-5" />
+                                                        <img 
+                                                            src={currentLanguage === 'id' ? 
+                                                                "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" : 
+                                                                "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"}
+                                                            alt={currentLanguage === 'id' ? "English" : "Indonesia"} 
+                                                            className="h-5 w-5" 
+                                                        />
+                                                        <span className="ml-2">{currentLanguage === 'id' ? 'English' : 'Indonesia'}</span>
                                                     </button>
                                                 </div>
                                             )}

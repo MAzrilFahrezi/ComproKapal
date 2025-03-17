@@ -1,8 +1,11 @@
 import React from 'react';
 import { FaHandshake, FaShieldAlt, FaLeaf, FaQuoteRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Partners() {
+    const { translate } = useLanguage();
+
     const partners = [
         {
             name: 'Pertamina',
@@ -36,22 +39,7 @@ export default function Partners() {
         }
     ];
 
-    const testimonials = [
-        {
-            name: 'Budi Santoso',
-            role: 'Operations Director',
-            company: 'PT Pertamina Shipping',
-            image: 'https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2940&auto=format&fit=crop',
-            quote: 'Orionindo telah menjadi mitra yang sangat dapat diandalkan dalam inspeksi dan survei kapal kami. Profesionalisme dan keahlian mereka sangat luar biasa.'
-        },
-        {
-            name: 'Linda Wijaya',
-            role: 'Technical Manager',
-            company: 'Pelindo Marine Services',
-            image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2961&auto=format&fit=crop',
-            quote: 'Kami sangat terkesan dengan standar tinggi dan ketepatan waktu dalam setiap proyek yang ditangani oleh tim Orionindo.'
-        }
-    ];
+    const testimonials = translate('home.partners.testimonials.items');
     
     return (
         <section className="relative py-24 bg-gradient-to-b from-blue-50 to-white overflow-hidden">
@@ -69,7 +57,7 @@ export default function Partners() {
                         viewport={{ once: true }}
                         className="text-4xl font-bold text-gray-900 mb-4"
                     >
-                        Klien & Mitra Kami
+                        {translate('home.partners.title')}
                     </motion.h2>
                     <motion.div 
                         initial={{ opacity: 0, scale: 0 }}
@@ -85,8 +73,7 @@ export default function Partners() {
                         viewport={{ once: true }}
                         className="text-lg text-gray-600 max-w-3xl mx-auto"
                     >
-                        PT. Orionindo Jaya Ocean telah bekerja sama dengan berbagai perusahaan terkemuka di sektor maritim, minyak, dan kimia. 
-                        Kepercayaan yang diberikan oleh klien kami menjadi bukti komitmen kami dalam memberikan layanan terbaik dan profesional.
+                        {translate('home.partners.description')}
                     </motion.p>
                 </div>
 
@@ -122,7 +109,7 @@ export default function Partners() {
                 {/* Testimonials Section */}
                 <div className="mb-20">
                     <div className="text-center mb-12">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">Apa Kata Mereka</h3>
+                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{translate('home.partners.testimonials.title')}</h3>
                         <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
                     </div>
 
@@ -168,11 +155,10 @@ export default function Partners() {
                         <div className="p-4 bg-blue-50 rounded-full mb-4">
                             <FaHandshake className="w-12 h-12 text-blue-600" />
                         </div>
-                        <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">Kolaborasi yang Kuat</h3>
+                        <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">{translate('home.partners.collaboration.title')}</h3>
                         <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
                         <p className="text-gray-600 text-center max-w-3xl">
-                            Kami bangga telah menjalin kemitraan dengan berbagai perusahaan terkemuka dalam industri maritim dan energi. 
-                            Setiap kerjasama kami dibangun atas dasar kepercayaan, profesionalisme, dan komitmen untuk memberikan layanan terbaik.
+                            {translate('home.partners.collaboration.description')}
                         </p>
                     </div>
                 </motion.div>
@@ -193,11 +179,10 @@ export default function Partners() {
                                 <div className="p-3 bg-white/10 rounded-lg mr-4">
                                     <FaShieldAlt className="w-8 h-8" />
                                 </div>
-                                <h3 className="text-xl font-bold">Komitmen Keamanan</h3>
+                                <h3 className="text-xl font-bold">{translate('home.partners.commitments.security.title')}</h3>
                             </div>
                             <p className="text-blue-100 leading-relaxed">
-                                Sebagai perusahaan yang bergerak di sektor maritim dan energi, kami berkomitmen untuk menjaga keamanan kerja 
-                                serta mematuhi regulasi keselamatan internasional dalam setiap aspek operasional kami.
+                                {translate('home.partners.commitments.security.description')}
                             </p>
                             <div className="mt-6 h-1 w-16 bg-white/40 rounded-full"></div>
                         </div>
@@ -206,11 +191,10 @@ export default function Partners() {
                                 <div className="p-3 bg-white/10 rounded-lg mr-4">
                                     <FaLeaf className="w-8 h-8" />
                                 </div>
-                                <h3 className="text-xl font-bold">Komitmen Lingkungan</h3>
+                                <h3 className="text-xl font-bold">{translate('home.partners.commitments.environmental.title')}</h3>
                             </div>
                             <p className="text-blue-100 leading-relaxed">
-                                Kami menerapkan prosedur yang ramah lingkungan dan berkomitmen untuk menjaga kelestarian lingkungan 
-                                dalam setiap aktivitas operasional perusahaan.
+                                {translate('home.partners.commitments.environmental.description')}
                             </p>
                             <div className="mt-6 h-1 w-16 bg-white/40 rounded-full"></div>
                         </div>

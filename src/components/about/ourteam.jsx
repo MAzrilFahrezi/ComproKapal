@@ -1,31 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaHandshake } from 'react-icons/fa';
-
-const teamMembers = [
-    {
-        name: "Pak Ibnu",
-        position: "Direktur Utama",
-        image: "https://th.bing.com/th/id/R.363966a1ced116fa0ded281a851e5cdc?rik=N6aSZ4C3jWUh1A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-yoOI2rn20fo%2fVNryn7dSBNI%2fAAAAAAAAAQc%2f0VmCnrLId1o%2fs1600%2fSoekarno.jpg&ehk=J5tTYp15SmxmqwqzwG3jG1z32dilI3l3jaIHiUCiIds%3d&risl=&pid=ImgRaw&r=0", // Ganti dengan URL gambar anggota tim
-    },
-    {
-        name: "Bella",
-        position: "Operation Manager",
-        image: "https://th.bing.com/th/id/R.363966a1ced116fa0ded281a851e5cdc?rik=N6aSZ4C3jWUh1A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-yoOI2rn20fo%2fVNryn7dSBNI%2fAAAAAAAAAQc%2f0VmCnrLId1o%2fs1600%2fSoekarno.jpg&ehk=J5tTYp15SmxmqwqzwG3jG1z32dilI3l3jaIHiUCiIds%3d&risl=&pid=ImgRaw&r=0", // Ganti dengan URL gambar anggota tim
-    },
-    {
-        name: "Rafli",
-        position: "Project Manager",
-        image: "https://th.bing.com/th/id/R.363966a1ced116fa0ded281a851e5cdc?rik=N6aSZ4C3jWUh1A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-yoOI2rn20fo%2fVNryn7dSBNI%2fAAAAAAAAAQc%2f0VmCnrLId1o%2fs1600%2fSoekarno.jpg&ehk=J5tTYp15SmxmqwqzwG3jG1z32dilI3l3jaIHiUCiIds%3d&risl=&pid=ImgRaw&r=0", // Ganti dengan URL gambar anggota tim
-    },
-    {
-        name: "Helmi",
-        position: "Teknisi Kapal",
-        image: "https://th.bing.com/th/id/R.363966a1ced116fa0ded281a851e5cdc?rik=N6aSZ4C3jWUh1A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-yoOI2rn20fo%2fVNryn7dSBNI%2fAAAAAAAAAQc%2f0VmCnrLId1o%2fs1600%2fSoekarno.jpg&ehk=J5tTYp15SmxmqwqzwG3jG1z32dilI3l3jaIHiUCiIds%3d&risl=&pid=ImgRaw&r=0", // Ganti dengan URL gambar anggota tim
-    },
-];
+import { useLanguage } from '../../context/LanguageContext';
 
 const OurTeam = () => {
+    const { translate } = useLanguage();
+
+    const teamMembers = [
+        {
+            name: translate('team.member1.name'),
+            position: translate('team.member1.position'),
+            image: "/src/assets/soekarno.jpeg"
+        },
+        {
+            name: translate('team.member2.name'),
+            position: translate('team.member2.position'),
+            image: "/src/assets/soekarno.jpeg"
+        },
+        {
+            name: translate('team.member3.name'),
+            position: translate('team.member3.position'),
+            image: "/src/assets/soekarno.jpeg"
+        },
+        {
+            name: translate('team.member4.name'),
+            position: translate('team.member4.position'),
+            image: "/src/assets/soekarno.jpeg"
+        },
+    ];
     return (
         <section className="py-16 bg-white relative">
             {/* Background Geometry */}
@@ -37,7 +39,7 @@ const OurTeam = () => {
                 <div className="absolute bottom-10 right-10 w-48 h-24 bg-green-200 rounded-lg opacity-30"></div>
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">Our Team</h2>
+                <h2 className="text-4xl font-bold text-center text-gray-900 mb-8">{translate('team.title')}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {teamMembers.slice(0, 4).map((member, index) => (
                         <motion.div 
@@ -89,11 +91,12 @@ const OurTeam = () => {
                         <div className="p-4 bg-blue-50 rounded-full mb-4">
                             <FaHandshake className="w-12 h-12 text-blue-600" />
                         </div>
-                        <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">Kolaborasi yang Kuat</h3>
+                        <h3 className="text-2xl font-bold text-center text-gray-900 mb-4">
+                            {translate('team.collaboration.title')}
+                        </h3>
                         <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
                         <p className="text-gray-600 text-center max-w-3xl">
-                            Kami bangga telah menjalin kemitraan dengan berbagai perusahaan terkemuka dalam industri maritim dan energi. 
-                            Setiap kerjasama kami dibangun atas dasar kepercayaan, profesionalisme, dan komitmen untuk memberikan layanan terbaik.
+                            {translate('team.collaboration.description')}
                         </p>
                     </div>
                 </motion.div>

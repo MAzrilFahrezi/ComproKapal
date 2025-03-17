@@ -1,63 +1,40 @@
 import React from 'react';
 import { FaUserTie, FaClipboardCheck, FaRocket, FaGlobeAmericas, FaTools, FaShieldAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Advantages() {
-    const advantages = [
-        {
-            icon: <FaUserTie className="w-8 h-8 " />,
-            title: "Profesional & Berpengalaman",
-            description: "Tim kami terdiri dari para ahli dengan pengalaman bertahun-tahun dalam industri maritim dan energi."
-        },
-        {
-            icon: <FaClipboardCheck className="w-8 h-8 " />,
-            title: "Akurasi & Kepatuhan",
-            description: "Setiap inspeksi dilakukan dengan standar tertinggi, mengikuti regulasi nasional dan internasional."
-        },
-        {
-            icon: <FaRocket className="w-8 h-8 " />,
-            title: "Pelayanan Cepat & Efisien",
-            description: "Kami memahami pentingnya waktu dalam bisnis Anda dan berkomitmen memberikan hasil yang cepat dan akurat."
-        },
-        {
-            icon: <FaGlobeAmericas className="w-8 h-8 " />,
-            title: "Jaringan Luas",
-            description: "Dengan koneksi yang kuat di industri, kami siap memberikan layanan terbaik di berbagai lokasi."
-        },
-        {
-            icon: <FaTools className="w-8 h-8 " />,
-            title: "Teknologi Modern",
-            description: "Menggunakan peralatan dan teknologi terkini untuk memastikan hasil inspeksi yang akurat dan efisien."
-        },
-        {
-            icon: <FaShieldAlt className="w-8 h-8 " />,
-            title: "Jaminan Kualitas",
-            description: "Memberikan jaminan kualitas terbaik untuk setiap layanan yang kami berikan dengan standar internasional."
-        }
-    ];
+    const { translate } = useLanguage();
+    const advantages = translate('home.advantages.items').map((item, index) => ({
+        icon: [
+            <FaUserTie className="w-8 h-8" />,
+            <FaClipboardCheck className="w-8 h-8" />,
+            <FaRocket className="w-8 h-8" />,
+            <FaGlobeAmericas className="w-8 h-8" />,
+            <FaTools className="w-8 h-8" />,
+            <FaShieldAlt className="w-8 h-8" />
+        ][index],
+        title: item.title,
+        description: item.description
+    }));
 
     return (
         <section className="relative py-24 overflow-visible">
-            {/* Wave decorations with proper z-index */}
             <div className="absolute top-0 left-0 right-0 h-40 overflow-visible" style={{ zIndex: 1 }}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute w-full" style={{ top: -1 }}>
                     <path fill="#eff6ff" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                 </svg>
             </div>
 
-            {/* Background gradient - with proper z-index */}
             <div className="absolute inset-0 bg-gradient-to-b from-white via-white to-blue-50" style={{ zIndex: 0 }}></div>
 
-            {/* Decorative circles with higher z-index */}
             <div className="absolute inset-0" style={{ zIndex: 2 }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-50 blur-2xl"></div>
                 <div className="absolute top-1/3 -left-20 w-64 h-64 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full opacity-50 blur-2xl"></div>
                 <div className="absolute bottom-20 right-10 w-48 h-48 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full opacity-40 blur-2xl"></div>
             </div>
             
-            {/* Main content with higher z-index */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative" style={{ zIndex: 10 }}>
-                {/* Section header */}
                 <div className="text-center mb-16">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
@@ -66,8 +43,8 @@ export default function Advantages() {
                         viewport={{ once: true }}
                         className="inline-block"
                     >
-                        <span className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-2 block">Why Choose Us</span>
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">Keunggulan Kami</h2>
+                        <span className="text-blue-600 text-sm font-semibold tracking-wider uppercase mb-2 block">{translate('home.advantages.title')}</span>
+                        <h2 className="text-4xl font-bold text-gray-900 mb-4">{translate('home.advantages.subtitle')}</h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto rounded-full mb-8"></div>
                     </motion.div>
                     <motion.p
@@ -77,12 +54,10 @@ export default function Advantages() {
                         viewport={{ once: true }}
                         className="text-lg text-gray-600 max-w-3xl mx-auto"
                     >
-                        Dengan pengalaman dan keahlian yang kami miliki, kami menawarkan berbagai keunggulan 
-                        untuk memenuhi kebutuhan bisnis maritim Anda dengan standar internasional.
+                        {translate('home.advantages.description')}
                     </motion.p>
                 </div>
                 
-                {/* Advantages grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {advantages.map((advantage, index) => (
                         <motion.div 
@@ -94,7 +69,6 @@ export default function Advantages() {
                             whileHover={{ y: -8 }}
                             className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
                         >
-                            {/* Card background decoration */}
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-transparent to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-transparent rounded-full -mt-10 -mr-10 opacity-0 group-hover:opacity-50 transition-opacity duration-300"></div>
                             
@@ -112,14 +86,12 @@ export default function Advantages() {
                                 </p>
                             </div>
                             
-                            {/* Bottom border decoration */}
                             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></div>
                         </motion.div>
                     ))}
                 </div>
             </div>
 
-            {/* Bottom wave with proper z-index */}
             <div className="absolute bottom-0 left-0 right-0 h-40 overflow-visible" style={{ zIndex: 1 }}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 w-full transform rotate-180" style={{ bottom: -1 }}>
                     <path fill="#eff6ff" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>

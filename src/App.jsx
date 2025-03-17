@@ -6,20 +6,23 @@ import Services from './components/services';
 import Gallery from './components/gallery';
 import Contact from './components/contact';
 import { Analytics } from '@vercel/analytics/react';
+import { LanguageProvider } from './context/LanguageContext';
 
 export default function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </Layout>
-      <Analytics />
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </Layout>
+        <Analytics />
+      </Router>
+    </LanguageProvider>
   );
 }

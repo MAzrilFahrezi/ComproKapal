@@ -1,11 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function AboutCompany() {
+    const { translate } = useLanguage();
+
     return (
         <section className="py-20 overflow-visible relative">
-            {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden" style={{ zIndex: 0 }}>
                 <div className="absolute top-20 right-0 w-64 h-64 bg-blue-50 rounded-full opacity-70 blur-xl"></div>
                 <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-50 rounded-full opacity-40 blur-xl"></div>
@@ -22,7 +24,7 @@ export default function AboutCompany() {
                         viewport={{ once: true }}
                         className="text-4xl font-bold text-gray-900 mb-4"
                     >
-                        Tentang Kami
+                        {translate('home.about.title')}
                     </motion.h2>
                     <motion.div 
                         initial={{ opacity: 0, scale: 0 }}
@@ -61,12 +63,12 @@ export default function AboutCompany() {
                         className="space-y-6 relative" 
                         style={{ zIndex: 10 }}
                     >
-                        <h3 className="text-2xl font-bold text-blue-900">PT. Orionindo Jaya Ocean</h3>
+                        <h3 className="text-2xl font-bold text-blue-900">{translate('home.about.companyName')}</h3>
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            Kami adalah perusahaan terdepan dalam bidang jasa Cargo Marine Inquiry, Petroleum & Chemical Inspection, serta P&I Surveyor. Berdiri dengan komitmen untuk memberikan layanan inspeksi dan konsultasi yang profesional, kami melayani berbagai kebutuhan industri maritim dan energi dengan standar internasional.
+                            {translate('home.about.description1')}
                         </p>
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            Berbasis di Palembang, Indonesia, kami hadir untuk memastikan kelancaran serta keamanan dalam setiap aktivitas operasional klien kami. Dengan tim ahli yang berpengalaman dan peralatan modern, kami menjamin kualitas layanan terbaik untuk setiap proyek yang kami tangani.
+                            {translate('home.about.description2')}
                         </p>
                         
                         <div className="grid grid-cols-3 gap-6 mt-8">
@@ -79,7 +81,7 @@ export default function AboutCompany() {
                                 <div className="text-blue-600 font-bold text-3xl mb-2">
                                     <CountUp start={0} end={15} duration={2.5} suffix="+" />
                                 </div>
-                                <div className="text-gray-600 font-medium">Tahun Pengalaman</div>
+                                <div className="text-gray-600 font-medium">{translate('home.about.stats.experience')}</div>
                             </motion.div>
                             <motion.div 
                                 whileInView={{ scale: [0.9, 1.05, 1] }} 
@@ -90,7 +92,7 @@ export default function AboutCompany() {
                                 <div className="text-blue-600 font-bold text-3xl mb-2">
                                     <CountUp start={0} end={500} duration={2.5} suffix="+" />
                                 </div>
-                                <div className="text-gray-600 font-medium">Proyek Selesai</div>
+                                <div className="text-gray-600 font-medium">{translate('home.about.stats.projects')}</div>
                             </motion.div>
                             <motion.div 
                                 whileInView={{ scale: [0.9, 1.05, 1] }} 
@@ -101,7 +103,7 @@ export default function AboutCompany() {
                                 <div className="text-blue-600 font-bold text-3xl mb-2">
                                     <CountUp start={0} end={100} duration={2.5} suffix="%" />
                                 </div>
-                                <div className="text-gray-600 font-medium">Kepuasan Klien</div>
+                                <div className="text-gray-600 font-medium">{translate('home.about.stats.satisfaction')}</div>
                             </motion.div>
                         </div>
                     </motion.div>

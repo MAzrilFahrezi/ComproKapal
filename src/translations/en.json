@@ -1,0 +1,205 @@
+{
+  "home": {
+    "slider": {
+      "slide1": {
+        "title": "Maritime Survey Excellence",
+        "subtitle": "Professional Marine Survey Services",
+        "description": "Leading provider of comprehensive marine survey services with international standards and expertise."
+      },
+      "slide2": {
+        "title": "Cargo Inspection Solutions",
+        "subtitle": "Expert Cargo Survey & Inspection",
+        "description": "Ensuring cargo safety and compliance through thorough inspection and professional documentation."
+      },
+      "slide3": {
+        "title": "Quality Assurance Guaranteed",
+        "subtitle": "Trusted Maritime Partner",
+        "description": "Delivering reliable and accurate survey results with commitment to excellence."
+      }
+    },
+    "features": {
+      "title": "Featured Services",
+      "description": "We are committed to providing the best service with international standards",
+      "safety": {
+        "title": "Guaranteed Security",
+        "description": "Prioritizing safety and security in every aspect of our services with international standards"
+      },
+      "efficiency": {
+        "title": "High Efficiency",
+        "description": "Providing fast and efficient services to optimize time and resources"
+      },
+      "innovation": {
+        "title": "Continuous Innovation",
+        "description": "Always adopting the latest technology and methods to improve service quality"
+      },
+      "cta": {
+        "title": "Ready to Help You",
+        "description": "Contact us to get the best solution according to your needs"
+      }
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Our Services",
+      "description": "We provide professional services in the maritime industry with international standards and commitment to the best quality",
+      "shipSurvey": {
+        "title": "Ship Survey",
+        "description": "Providing solutions that ensure claims are paid, damage is repaired, ships return to operation, and risks are minimized.",
+        "points": [
+          "Draft Survey",
+          "On/Off Hire Condition Survey for All Types of Vessels",
+          "Ship Damage Condition Survey for Insurance Claims",
+          "Pre-Charter and Pre-Purchase Ship Inspection",
+          "General Hull and Machinery Condition Inspection",
+          "Bunker Survey",
+          "Towing and Lashing Survey",
+          "Protection and Indemnity Club Related Matters Investigation"
+        ]
+      },
+      "cargoSurvey": {
+        "title": "Cargo Survey",
+        "description": "Facilitating fast and efficient transaction execution, improving security and reliability, and preventing shipping schedule disruptions.",
+        "points": [
+          "Loading/unloading survey/inspection",
+          "Pre-shipment survey",
+          "Pre-discharge survey",
+          "Cargo stowage, securing, and lashing supervision",
+          "Cargo condition survey and cargo supervision",
+          "Quantity determination through sounding, weighing, tally, and draft survey",
+          "Container, oil, and chemical survey",
+          "Cargo sampling for analysis and quality determination"
+        ]
+      }
+    },
+    "advantages": {
+      "title": "Why Choose Us",
+      "subtitle": "Our Advantages",
+      "description": "With our experience and expertise, we offer various advantages to meet your maritime business needs with international standards.",
+      "items": [
+        {
+          "title": "Professional & Experienced",
+          "description": "Our team consists of experts with years of experience in the maritime and energy industries."
+        },
+        {
+          "title": "Accuracy & Compliance",
+          "description": "Every inspection is conducted to the highest standards, following national and international regulations."
+        },
+        {
+          "title": "Fast & Efficient Service",
+          "description": "We understand the importance of time in your business and are committed to delivering quick and accurate results."
+        },
+        {
+          "title": "Wide Network",
+          "description": "With strong industry connections, we are ready to provide the best service in various locations."
+        },
+        {
+          "title": "Modern Technology",
+          "description": "Using the latest equipment and technology to ensure accurate and efficient inspection results."
+        },
+        {
+          "title": "Quality Assurance",
+          "description": "Providing the best quality assurance for every service we provide with international standards."
+        }
+      ]
+    },
+    "about": {
+      "title": "About Us",
+      "companyName": "PT Orionindo Jaya Ocean",
+      "description1": "We are a leading company in Cargo Marine Inquiry, Petroleum & Chemical Inspection, and P&I Surveyor services. With over 15 years of experience, we have served various maritime and energy industry needs with international standards.",
+      "description2": "Based in Palembang, Indonesia, we are here to ensure smooth and secure operations in every operational activity of our clients. With an experienced expert team and modern equipment, we guarantee the best service quality for every project we handle.",
+      "description": "We are a leading company in Cargo Marine Inquiry, Petroleum & Chemical Inspection, and P&I Surveyor services. Established with a commitment to providing professional inspection and consulting services, we serve various maritime and energy industry needs with international standards.",
+      "location": "Based in Palembang, Indonesia, we are here to ensure smooth and secure operations in every operational activity of our clients. With an experienced expert team and modern equipment, we guarantee the best service quality for every project we handle.",
+      "stats": {
+        "experience": "Years Experience",
+        "projects": "Projects Completed",
+        "satisfaction": "Client Satisfaction"
+      }
+    },
+    "partners": {
+      "title": "Our Clients & Partners",
+      "description": "PT. Orionindo Jaya Ocean has collaborated with various leading companies in the maritime and energy sectors. The trust given by our clients is proof of our commitment to providing the best and professional services.",
+      "testimonials": {
+        "title": "What They Say",
+        "items": [
+          {
+            "name": "Budi Santoso",
+            "role": "Operations Director",
+            "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=2940&auto=format&fit=crop",
+            "company": "PT Pertamina Shipping",
+            "quote": "Orionindo has been a highly reliable partner in our vessel inspection and surveys. Their professionalism and expertise are exceptional."
+          },
+          {
+            "name": "Linda Wijaya",
+            "role": "Technical Manager",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2961&auto=format&fit=crop",
+            "company": "Pelindo Marine Services",
+            "quote": "We are very impressed with the high standards and timeliness in every project handled by the Orionindo team."
+          }
+        ]
+      },
+      "collaboration": {
+        "title": "Strong Collaboration",
+        "description": "We are proud to have established partnerships with leading companies in the maritime and energy industries. Each of our collaborations is built on trust, professionalism, and commitment to delivering the best service."
+      },
+      "commitments": {
+        "security": {
+          "title": "Security Commitment",
+          "description": "As a company operating in the maritime and energy sector, we are committed to maintaining work safety and complying with international safety regulations in every aspect of our operations."
+        },
+        "environmental": {
+          "title": "Environmental Commitment",
+          "description": "We implement environmentally friendly procedures and are committed to preserving the environment in all company operational activities."
+        }
+      },
+      "needHelp": {
+        "title": "Need Help?",
+        "description": "Our team is ready to help you with shipping solutions that suit your needs",
+        "button": "Contact Us Now"
+      }
+    }
+  },
+  "about": {
+    "cover": {
+      "title": "About PT Orionindo Jaya Ocean",
+      "subtitle": "Company in the field of Cargo Marine Inquiry, Petroleum & Chemical Inspection and P&I Surveyor services"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "We are a leading company in Cargo Marine Inquiry, Petroleum & Chemical Inspection, and P&I Surveyor services. Established with a commitment to providing professional inspection and consulting services, we serve various maritime and energy industry needs with international standards."
+    },
+    "vision": {
+      "title": "Vision & Mission",
+      "vision_title": "Vision",
+      "vision_text": "To become a trusted partner in the maritime and energy industry, providing professional, innovative, and technology-based inspection and consulting services.",
+      "mission_title": "Mission",
+      "mission_points": [
+        "Provide accurate and reliable inspection services to ensure compliance with international regulations.",
+        "Prioritize customer satisfaction with precise, quick, and efficient solutions.",
+        "Develop competent and professional human resources in marine cargo inspection and chemical and petroleum survey.",
+        "Innovate in technology-based services to improve efficiency and accuracy."
+      ]
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "member1": {
+      "name": "John Smith",
+      "position": "CEO & Founder"
+    },
+    "member2": {
+      "name": "Sarah Johnson",
+      "position": "Technical Director"
+    },
+    "member3": {
+      "name": "Michael Chen",
+      "position": "Operations Manager"
+    },
+    "member4": {
+      "name": "Emily Brown",
+      "position": "Senior Surveyor"
+    },
+    "collaboration": {
+      "title": "Strong Team Collaboration",
+      "description": "Our team works together seamlessly to deliver exceptional maritime services with the highest standards of professionalism and expertise."
+    }
+  }
+}

@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 const About = () => {
+    const { translate } = useLanguage();
+
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:">
-            {/* Sesi Mengapa Memilih Kami */}
             <div className="text-center mb-16">
                 <motion.h2 
                     initial={{ opacity: 0, y: 20 }}
@@ -13,7 +15,7 @@ const About = () => {
                     viewport={{ once: true }}
                     className="text-4xl font-bold text-gray-900 mb-4"
                 >
-                    Tentang Kami
+                    {translate('about.about.title')}
                 </motion.h2>
                 <motion.div 
                     initial={{ opacity: 0, scale: 0 }}
@@ -23,7 +25,7 @@ const About = () => {
                     className="w-24 h-1 bg-blue-600 mx-auto rounded-full mb-8"
                 />
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                    Kami adalah perusahaan terdepan dalam bidang jasa Cargo Marine Inquiry, Petroleum & Chemical Inspection, serta P&I Surveyor. Berdiri dengan komitmen untuk memberikan layanan inspeksi dan konsultasi yang profesional, kami melayani berbagai kebutuhan industri maritim dan energi dengan standar internasional.
+                    {translate('about.about.description')}
                 </p>
             </div>
         </div>

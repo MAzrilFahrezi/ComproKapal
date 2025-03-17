@@ -1,10 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLanguage } from '../../context/LanguageContext';
 
 export default function Features() {
+    const { translate, currentLanguage } = useLanguage();
+
     return (
         <section className="relative py-20 bg-gradient-to-b from-white to-gray-50 overflow-visible">
-            {/* Background decorative elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-visible opacity-30  pointer-events-none" style={{ zIndex: 1 }}>
                 <svg className="absolute top-0 left-0 w-96 h-96 text-blue-600 transform -translate-x-1/2 -translate-y-1/2" fill="currentColor" viewBox="0 0 200 200">
                     <path d="M44.3,-76.4C58.8,-69.8,72.9,-59.6,79.1,-45.4C85.2,-31.2,83.5,-13.1,79.8,3.7C76.1,20.4,70.4,35.8,61,48.3C51.6,60.8,38.5,70.4,24.2,75.2C10,80,-5.4,79.8,-20.9,76.7C-36.5,73.5,-52.3,67.2,-65.3,56.4C-78.4,45.6,-88.7,30.2,-89.9,14.1C-91,-2,-83,-17.7,-73.7,-30.9C-64.4,-44.1,-53.8,-54.7,-41.3,-61.9C-28.9,-69,-14.4,-72.7,0.7,-73.9C15.9,-75.1,31.8,-74,44.3,-76.4Z" transform="translate(100 100)" />
@@ -14,7 +16,6 @@ export default function Features() {
                 </svg>
             </div>
 
-            {/* Additional floating elements for depth */}
             <div className="absolute top-1/4 left-1/3 w-20 h-20 rounded-full bg-blue-100/30 blur-lg" style={{ zIndex: 2 }}></div>
             <div className="absolute bottom-1/4 right-1/4 w-32 h-32 rounded-full bg-blue-100/30 blur-lg" style={{ zIndex: 2 }}></div>
 
@@ -27,7 +28,7 @@ export default function Features() {
                         viewport={{ once: true }}
                         className="text-4xl font-bold text-gray-900 mb-4"
                     >
-                        Mengapa Memilih Kami
+                        {translate('home.features.title')}
                     </motion.h2>
                     <motion.div
                         initial={{ opacity: 0, scale: 0 }}
@@ -37,8 +38,7 @@ export default function Features() {
                         className="w-24 h-1 bg-blue-600 mx-auto rounded-full mb-8"
                     />
                     <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                        Dengan pengalaman bertahun-tahun dalam industri maritim, kami menawarkan solusi komprehensif
-                        yang memenuhi standar internasional dan kebutuhan spesifik klien kami.
+                        {translate('home.features.description')}
                     </p>
                 </div>
 
@@ -58,9 +58,9 @@ export default function Features() {
                                 </svg>
                             </div>
                         </div>
-                        <h3 className="text-xl font-bold text-center text-gray-900 mb-4">Keamanan & Keselamatan</h3>
+                        <h3 className="text-xl font-bold text-center text-gray-900 mb-4">{translate('home.features.safety.title')}</h3>
                         <p className="text-gray-600 text-center">
-                            Kami memprioritaskan keselamatan dalam setiap aspek layanan kami, memastikan setiap inspeksi dan proyek memenuhi standar keamanan tertinggi.
+                            {translate('home.features.safety.description')}
                         </p>
                     </motion.div>
 
@@ -79,9 +79,9 @@ export default function Features() {
                                 </svg>
                             </div>
                         </div>
-                        <h3 className="text-xl font-bold text-center text-gray-900 mb-4">Efisiensi & Kecepatan</h3>
+                        <h3 className="text-xl font-bold text-center text-gray-900 mb-4">{translate('home.features.efficiency.title')}</h3>
                         <p className="text-gray-600 text-center">
-                            Dengan teknologi terkini dan tim yang berpengalaman, kami memberikan layanan yang cepat dan efisien tanpa mengorbankan kualitas.
+                            {translate('home.features.efficiency.description')}
                         </p>
                     </motion.div>
 
@@ -100,9 +100,9 @@ export default function Features() {
                                 </svg>
                             </div>
                         </div>
-                        <h3 className="text-xl font-bold text-center text-gray-900 mb-4">Inovasi & Teknologi</h3>
+                        <h3 className="text-xl font-bold text-center text-gray-900 mb-4">{translate('home.features.innovation.title')}</h3>
                         <p className="text-gray-600 text-center">
-                            Kami selalu berinvestasi dalam teknologi terbaru dan metode inovatif untuk memberikan solusi perkapalan yang mutakhir.
+                            {translate('home.features.innovation.description')}
                         </p>
                     </motion.div>
                 </div>
@@ -110,12 +110,12 @@ export default function Features() {
                 <div className="mt-20 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl overflow-visible shadow-xl relative z-20">
                     <div className="grid md:grid-cols-2 items-center">
                         <div className="p-8 md:p-12">
-                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Siap untuk solusi maritim profesional?</h3>
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">{translate('home.features.cta.title')}</h3>
                             <p className="text-blue-100 mb-8">
-                                Kami siap membantu Anda dengan berbagai kebutuhan maritim dan inspeksi. Hubungi kami sekarang untuk konsultasi gratis.
+                                {translate('home.features.cta.description')}
                             </p>
                             <a href="/contact" className="inline-block px-8 py-3 bg-white text-blue-800 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 transform hover:scale-105">
-                                Hubungi Kami
+                                {currentLanguage === 'id' ? 'Hubungi Kami' : 'Contact Us'}
                             </a>
                         </div>
                         <div className="hidden md:block relative h-full overflow-hidden">
