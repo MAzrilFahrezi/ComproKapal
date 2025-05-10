@@ -3,7 +3,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.jpg';
+import logo from '../assets/logo2.png';
 import { useLanguage } from '../context/LanguageContext';
 
 function classNames(...classes) {
@@ -80,8 +80,8 @@ export default function Navbar() {
             {scrolled && <div className="h-16"></div>}
 
             <Disclosure as="nav" className={classNames(
-                scrolled 
-                    ? "fixed top-0 left-0 right-0 w-full py-2 shadow-md bg-white/95 backdrop-blur-sm transform-none transition-all duration-300 ease-in-out" 
+                scrolled
+                    ? "fixed top-0 left-0 right-0 w-full py-2 shadow-md bg-white/95 backdrop-blur-sm transform-none transition-all duration-300 ease-in-out"
                     : "relative py-4 bg-white transition-all duration-300",
                 "z-50"
             )}>
@@ -92,10 +92,10 @@ export default function Navbar() {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <a href="/" className="flex items-center">
-                                            <img 
-                                                src={logo} 
+                                            <img
+                                                src={logo}
                                                 alt="Orionindo Logo"
-                                                className="h-10 w-auto"
+                                                className="h-24 w-auto"
                                             />
                                         </a>
                                     </div>
@@ -132,30 +132,30 @@ export default function Navbar() {
                                     </motion.a>
                                     <div className="ml-4">
                                         <div className="relative">
-                                            <button 
+                                            <button
                                                 className="flex items-center text-gray-600 hover:text-blue-900 focus:outline-none"
                                                 onClick={() => setDropdownOpen(!dropdownOpen)}
                                             >
-                                                <img 
-                                                    src={currentLanguage === 'id' ? 
-                                                        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" : 
-                                                        "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" } 
-                                                    alt={currentLanguage === 'id' ? "Indonesia" : "English"} 
-                                                    className="h-5 w-5" 
+                                                <img
+                                                    src={currentLanguage === 'id' ?
+                                                        "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" :
+                                                        "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"}
+                                                    alt={currentLanguage === 'id' ? "Indonesia" : "English"}
+                                                    className="h-5 w-5"
                                                 />
                                             </button>
                                             {dropdownOpen && (
                                                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
-                                                    <button 
+                                                    <button
                                                         className="flex items-center w-full px-4 py-2 text-gray-600 hover:bg-gray-100"
                                                         onClick={handleLanguageChange}
                                                     >
-                                                        <img 
-                                                            src={currentLanguage === 'id' ? 
-                                                                "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" : 
+                                                        <img
+                                                            src={currentLanguage === 'id' ?
+                                                                "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" :
                                                                 "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"}
-                                                            alt={currentLanguage === 'id' ? "English" : "Indonesia"} 
-                                                            className="h-5 w-5" 
+                                                            alt={currentLanguage === 'id' ? "English" : "Indonesia"}
+                                                            className="h-5 w-5"
                                                         />
                                                         <span className="ml-2">{currentLanguage === 'id' ? 'English' : 'Indonesia'}</span>
                                                     </button>
