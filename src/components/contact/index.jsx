@@ -23,7 +23,7 @@ export default function Contact() {
                         ></iframe>
                     </div>
                     <h2 className="text-2xl font-semibold text-blue-900">{translate('contact.info.title')}</h2>
-                    <div className="space-y-2">
+                    <div className="space-y-6">
                         <div className="flex items-start space-x-4">
                             <svg className="w-6 h-6 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -47,9 +47,25 @@ export default function Contact() {
                             <svg className="w-6 h-6 text-blue-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <div>
-                                <h3 className="text-lg font-semibold text-gray-800">{translate('contact.info.email.label')}</h3>
-                                <p className="text-gray-600">{translate('contact.info.email.value')}</p>
+                            <div className="w-full">
+                                <h3 className="text-lg font-semibold text-gray-800">{translate('contact.info.emails.label')}</h3>
+                                <div className="space-y-4 mt-2">
+                                    {translate('contact.info.emails.sections').map((section, index) => (
+                                        <div key={index} className="bg-gray-50 p-3 rounded-lg">
+                                            <h4 className="text-md font-semibold text-blue-900 mb-2">{section.title}</h4>
+                                            <div className="space-y-1">
+                                                {section.emails.map((email, emailIndex) => (
+                                                    <div key={emailIndex} className="flex items-center justify-between">
+                                                        <span className="text-gray-600">{email.label}</span>
+                                                        <a href={`mailto:${email.address}`} className="text-blue-600 hover:text-blue-800">
+                                                            {email.address}
+                                                        </a>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

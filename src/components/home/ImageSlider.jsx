@@ -9,6 +9,13 @@ export default function ImageSlider() {
 
   const images = [
     {
+      url: '/src/assets/IMG-20250510-WA0004.jpg',
+      logo: '/src/assets/logo2.png',
+      title: "PT. Orionindo Jaya Ocean",
+      subtitle: translate('home.about.description'),
+      description: translate('home.about.location')
+    },
+    {
       url: 'https://images.unsplash.com/photo-1573014089159-8ee711dc5a8e?q=80&w=1974&auto=format&fit=crop&q=80',
       title: translate('home.slider.slide1.title'),
       subtitle: translate('home.slider.slide1.subtitle'),
@@ -94,39 +101,44 @@ export default function ImageSlider() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/90" style={{ zIndex: 3 }} />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-transparent to-black/70" style={{ zIndex: 3 }} />
               </div>
-              <div className="relative h-full flex items-center justify-start text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto" style={{ zIndex: 10 }}>
+              <div className="relative h-full flex items-center justify-between text-left px-8 md:px-16 lg:px-24 max-w-[1400px] mx-auto" style={{ zIndex: 10 }}>
                 <div
-                  className={`space-y-6 max-w-3xl transition-all duration-700 ease-out ${currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                  className={`flex items-center gap-8 w-full justify-between transition-all duration-700 ease-out ${currentSlide === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 >
-                  <h2
-                    className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-lg"
-                  >
-                    {image.title}
-                  </h2>
-                  <p
-                    className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed drop-shadow-md"
-                  >
-                    {image.subtitle}
-                  </p>
-                  <p
-                    className="text-base md:text-lg text-gray-300 mb-8 drop-shadow-md"
-                  >
-                    {image.description}
-                  </p>
-                  <div className="flex gap-4">
-                    <a
-                      href="/contact"
-                      className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
-                    >
-                      {currentLanguage === 'id' ? 'Hubungi Kami' : 'Contact Us'}
-                    </a>
-                    <a
-                      href="/services"
-                      className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
-                    >
-                      {currentLanguage === 'id' ? 'Layanan Kami' : 'Our Services'}
-                    </a>
+                  <div className="space-y-6 max-w-3xl">
+                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight leading-tight drop-shadow-lg">
+                      {image.title}
+                    </h2>
+                    <p className="text-lg md:text-xl text-gray-200 mb-6 leading-relaxed drop-shadow-md">
+                      {image.subtitle}
+                    </p>
+                    <p className="text-base md:text-lg text-gray-300 mb-8 drop-shadow-md">
+                      {image.description}
+                    </p>
+                    <div className="flex gap-4">
+                      <a
+                        href="/contact"
+                        className="inline-block bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
+                      >
+                        {currentLanguage === 'id' ? 'Hubungi Kami' : 'Contact Us'}
+                      </a>
+                      <a
+                        href="/services"
+                        className="inline-block border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 hover:scale-105 hover:shadow-xl backdrop-blur-sm transition-all duration-300"
+                      >
+                        {currentLanguage === 'id' ? 'Layanan Kami' : 'Our Services'}
+                      </a>
+                    </div>
                   </div>
+                  {index === 0 && (
+                    <div className="w-64 h-64 flex-shrink-0 ml-8">
+                      <img
+                        src={image.logo}
+                        alt="PT Orionindo Jaya Ocean Logo"
+                        className="w-full h-full object-contain filter brightness-100"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

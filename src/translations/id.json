@@ -231,7 +231,7 @@
   "box": {
     "content": {
       "title": "Pencapaian Kami",
-      "description": "Komitmen kami untuk memberikan layanan terbaik telah menghasilkan berbagai pencapaian yang membanggakan. Dengan pengalaman lebih dari 15 tahun dalam industri maritim, kami telah dipercaya oleh berbagai perusahaan terkemuka di Indonesia." 
+      "description": "Komitmen kami untuk memberikan layanan terbaik telah menghasilkan berbagai pencapaian yang membanggakan. Dengan pengalaman lebih dari 15 tahun dalam industri maritim, kami telah dipercaya oleh berbagai perusahaan terkemuka di Indonesia."
     }
   },
   "services2": {
@@ -315,6 +315,69 @@
         "category": "Survei Kargo",
         "title": "Pengawasan Penataan",
         "description": "Pengawasan penataan, pengamanan, dan pengikatan kargo."
+      },
+      {
+        "id": 7,
+        "src": "/src/assets/IMG-20250510-WA0004.jpg",
+        "category": "Survei Kapal",
+        "title": "Inspeksi Lambung Kapal",
+        "description": "Pemeriksaan menyeluruh kondisi lambung kapal untuk memastikan kelaikan operasional."
+      },
+      {
+        "id": 8,
+        "src": "/src/assets/IMG-20250510-WA0005.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengawasan Bongkar Muat",
+        "description": "Pengawasan proses bongkar muat untuk memastikan keamanan dan efisiensi operasional."
+      },
+      {
+        "id": 9,
+        "src": "/src/assets/IMG-20250510-WA0006.jpg",
+        "category": "Survei Kapal",
+        "title": "Inspeksi Peralatan Keselamatan",
+        "description": "Pemeriksaan kelengkapan dan kondisi peralatan keselamatan sesuai standar internasional."
+      },
+      {
+        "id": 10,
+        "src": "/src/assets/IMG-20250510-WA0007.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengambilan Sampel Kargo",
+        "description": "Proses pengambilan sampel kargo untuk analisis kualitas dan kesesuaian standar."
+      },
+      {
+        "id": 11,
+        "src": "/src/assets/IMG-20250510-WA0008.jpg",
+        "category": "Survei Kapal",
+        "title": "Survei Kondisi Mesin",
+        "description": "Pemeriksaan detail kondisi mesin dan sistem propulsi kapal."
+      },
+      {
+        "id": 12,
+        "src": "/src/assets/IMG-20250510-WA0009.jpg",
+        "category": "Survei Kargo",
+        "title": "Inspeksi Kontainer",
+        "description": "Pemeriksaan kondisi dan kesesuaian kontainer untuk pengiriman kargo."
+      },
+      {
+        "id": 13,
+        "src": "/src/assets/IMG-20250510-WA0010.jpg",
+        "category": "Survei Kapal",
+        "title": "Survei Draft Kapal",
+        "description": "Pengukuran draft kapal untuk penentuan berat muatan dan stabilitas."
+      },
+      {
+        "id": 14,
+        "src": "/src/assets/IMG-20250510-WA0011.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengawasan Pemuatan",
+        "description": "Supervisi proses pemuatan untuk memastikan keselamatan dan kesesuaian prosedur."
+      },
+      {
+        "id": 15,
+        "src": "/src/assets/IMG-20250510-WA0012.jpg",
+        "category": "Survei Kapal",
+        "title": "Inspeksi Deck",
+        "description": "Pemeriksaan menyeluruh kondisi deck dan peralatan pendukung operasional."
       }
     ]
   },
@@ -330,9 +393,54 @@
         "label": "Telepon",
         "value": "+62 31 1234 5678"
       },
-      "email": {
+      "emails": {
         "label": "Email",
-        "value": "info@perusahaankapal.com"
+        "sections": [
+          {
+            "title": "Operation",
+            "emails": [
+              {
+                "label": "Operation Team",
+                "address": "operation@orionindo.com"
+              }
+            ]
+          },
+          {
+            "title": "Finance",
+            "emails": [
+              {
+                "label": "Finance Team",
+                "address": "finance@orionindo.com"
+              }
+            ]
+          },
+          {
+            "title": "Technical Team",
+            "emails": [
+              {
+                "label": "Ibnu",
+                "address": "ibnu@orionindo.com"
+              },
+              {
+                "label": "Bella",
+                "address": "bella@orionindo.com"
+              }
+            ]
+          },
+          {
+            "title": "Support Team",
+            "emails": [
+              {
+                "label": "Rafli",
+                "address": "rafli@orionindo.com"
+              },
+              {
+                "label": "Helmi",
+                "address": "helmi@orionindo.com"
+              }
+            ]
+          }
+        ]
       }
     },
     "form": {
@@ -357,27 +465,66 @@
     "navigation": {
       "title": "Tautan Cepat",
       "items": [
-        { "name": "Beranda", "href": "/" },
-        { "name": "Tentang Kami", "href": "/about" },
-        { "name": "Layanan", "href": "/services" },
-        { "name": "Galeri", "href": "/gallery" },
-        { "name": "Kontak", "href": "/contact" }
+        {
+          "name": "Beranda",
+          "href": "/"
+        },
+        {
+          "name": "Tentang Kami",
+          "href": "/about"
+        },
+        {
+          "name": "Layanan",
+          "href": "/services"
+        },
+        {
+          "name": "Galeri",
+          "href": "/gallery"
+        },
+        {
+          "name": "Kontak",
+          "href": "/contact"
+        }
       ]
     },
     "services": {
       "title": "Layanan",
       "items": [
-        { "name": "Pembangunan Kapal", "href": "/services" },
-        { "name": "Perbaikan Kapal", "href": "/services" },
-        { "name": "Modernisasi Kapal", "href": "/services" },
-        { "name": "Konsultasi Teknis", "href": "/services" }
+        {
+          "name": "Pembangunan Kapal",
+          "href": "/services"
+        },
+        {
+          "name": "Perbaikan Kapal",
+          "href": "/services"
+        },
+        {
+          "name": "Modernisasi Kapal",
+          "href": "/services"
+        },
+        {
+          "name": "Konsultasi Teknis",
+          "href": "/services"
+        }
       ]
     },
     "contact": {
       "title": "Hubungi Kami",
       "address": "Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia",
-      "email": "operation@orionindo.com",
-      "phone": "(021) 1234-5678"
+      "phone": "(021) 1234-5678",
+      "emails": {
+        "main": "operation@orionindo.com",
+        "departments": [
+          {
+            "name": "Operation",
+            "email": "operation@orionindo.com"
+          },
+          {
+            "name": "Finance",
+            "email": "finance@orionindo.com"
+          }
+        ]
+      }
     },
     "bottom": {
       "copyright": "© 2024 PT. Orionindo Jaya Ocean. Hak Cipta Dilindungi.",
