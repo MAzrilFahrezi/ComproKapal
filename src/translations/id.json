@@ -319,9 +319,9 @@
       {
         "id": 7,
         "src": "/src/assets/IMG-20250510-WA0004.jpg",
-        "category": "Survei Kapal",
-        "title": "Inspeksi Lambung Kapal",
-        "description": "Pemeriksaan menyeluruh kondisi lambung kapal untuk memastikan kelaikan operasional."
+        "category": "Survei Kargo",
+        "title": "Operasi Bongkar Muat Pelabuhan",
+        "description": "Pengawasan aktivitas bongkar muat kargo di pelabuhan dengan fasilitas crane modern."
       },
       {
         "id": 8,
@@ -347,37 +347,37 @@
       {
         "id": 11,
         "src": "/src/assets/IMG-20250510-WA0008.jpg",
-        "category": "Survei Kapal",
-        "title": "Survei Kondisi Mesin",
-        "description": "Pemeriksaan detail kondisi mesin dan sistem propulsi kapal."
+        "category": "Survei Kargo",
+        "title": "Operasi Crane Pelabuhan",
+        "description": "Pengawasan penanganan kargo menggunakan fasilitas crane pelabuhan modern untuk bongkar muat yang efisien."
       },
       {
         "id": 12,
         "src": "/src/assets/IMG-20250510-WA0009.jpg",
         "category": "Survei Kargo",
-        "title": "Inspeksi Kontainer",
-        "description": "Pemeriksaan kondisi dan kesesuaian kontainer untuk pengiriman kargo."
+        "title": "Inspeksi Pemuatan Kargo",
+        "description": "Pemantauan dan pemeriksaan proses pemuatan kargo dengan peralatan dan prosedur yang tepat."
       },
       {
         "id": 13,
         "src": "/src/assets/IMG-20250510-WA0010.jpg",
-        "category": "Survei Kapal",
-        "title": "Survei Draft Kapal",
-        "description": "Pengukuran draft kapal untuk penentuan berat muatan dan stabilitas."
+        "category": "Survei Kargo",
+        "title": "Penanganan Kargo Curah",
+        "description": "Pengawasan operasi pemuatan kargo curah dengan tindakan dan peralatan keselamatan yang tepat."
       },
       {
         "id": 14,
         "src": "/src/assets/IMG-20250510-WA0011.jpg",
         "category": "Survei Kargo",
-        "title": "Pengawasan Pemuatan",
-        "description": "Supervisi proses pemuatan untuk memastikan keselamatan dan kesesuaian prosedur."
+        "title": "Dokumentasi Kargo",
+        "description": "Dokumentasi dan verifikasi menyeluruh proses penanganan kargo di pelabuhan."
       },
       {
         "id": 15,
         "src": "/src/assets/IMG-20250510-WA0012.jpg",
-        "category": "Survei Kapal",
-        "title": "Inspeksi Deck",
-        "description": "Pemeriksaan menyeluruh kondisi deck dan peralatan pendukung operasional."
+        "category": "Survei Kargo",
+        "title": "Operasi Terminal Pelabuhan",
+        "description": "Pengawasan aktivitas terminal pelabuhan termasuk prosedur bongkar muat dan penanganan kargo."
       }
     ]
   },

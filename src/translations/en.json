@@ -319,9 +319,9 @@
       {
         "id": 7,
         "src": "/src/assets/IMG-20250510-WA0004.jpg",
-        "category": "Ship Survey",
-        "title": "Hull Inspection",
-        "description": "Comprehensive inspection of ship hull condition to ensure operational seaworthiness."
+        "category": "Cargo Survey",
+        "title": "Port Loading Operations",
+        "description": "Supervision of cargo loading and unloading activities at port with modern crane facilities."
       },
       {
         "id": 8,
@@ -347,37 +347,37 @@
       {
         "id": 11,
         "src": "/src/assets/IMG-20250510-WA0008.jpg",
-        "category": "Ship Survey",
-        "title": "Engine Condition Survey",
-        "description": "Detailed inspection of ship engine and propulsion system condition."
+        "category": "Cargo Survey",
+        "title": "Port Crane Operations",
+        "description": "Supervision of cargo handling using modern port crane facilities for efficient loading and unloading."
       },
       {
         "id": 12,
         "src": "/src/assets/IMG-20250510-WA0009.jpg",
         "category": "Cargo Survey",
-        "title": "Container Inspection",
-        "description": "Inspection of container condition and suitability for cargo shipment."
+        "title": "Cargo Loading Inspection",
+        "description": "Monitoring and inspection of cargo loading processes with proper equipment and procedures."
       },
       {
         "id": 13,
         "src": "/src/assets/IMG-20250510-WA0010.jpg",
-        "category": "Ship Survey",
-        "title": "Ship Draft Survey",
-        "description": "Ship draft measurement for cargo weight determination and stability."
+        "category": "Cargo Survey",
+        "title": "Bulk Cargo Handling",
+        "description": "Supervision of bulk cargo loading operations with proper safety measures and equipment."
       },
       {
         "id": 14,
         "src": "/src/assets/IMG-20250510-WA0011.jpg",
         "category": "Cargo Survey",
-        "title": "Loading Supervision",
-        "description": "Loading process supervision to ensure safety and procedure compliance."
+        "title": "Cargo Documentation",
+        "description": "Comprehensive documentation and verification of cargo handling processes at port."
       },
       {
         "id": 15,
         "src": "/src/assets/IMG-20250510-WA0012.jpg",
-        "category": "Ship Survey",
-        "title": "Deck Inspection",
-        "description": "Comprehensive inspection of deck condition and operational support equipment."
+        "category": "Cargo Survey",
+        "title": "Port Terminal Operations",
+        "description": "Oversight of port terminal activities including loading, unloading, and cargo handling procedures."
       }
     ]
   },
