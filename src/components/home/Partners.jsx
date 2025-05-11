@@ -9,37 +9,37 @@ export default function Partners() {
     const partners = [
         {
             name: 'PT. Hijau Lestari Raya Fiberboard',
-            logo: '/src/assets/Pt hijau lestari raya.jpeg.jpg',
+            logo: '/assets/Pt hijau lestari raya.jpeg.jpg',
             type: 'Fiberboard Industry'
         },
         {
             name: 'PT. ADR Group',
-            logo: '/src/assets/Pt ADR.png',
+            logo: '/assets/Pt ADR.png',
             type: 'Business Group'
         },
         {
             name: 'PT. Indonesia Fibreboard Industry Tbk.',
-            logo: '/src/assets/ifi.png',
+            logo: '/assets/ifi.png',
             type: 'Fiberboard Manufacturing'
         },
         {
             name: 'PT. Wahana Lestari Makmur Sukses',
-            logo: '/src/assets/PT Wahana Lestari Makmur.png',
+            logo: '/assets/PT Wahana Lestari Makmur.png',
             type: 'Logistics'
         },
         {
             name: 'PT. Samudera Indonesia Group',
-            logo: '/src/assets/PT Samudera Indonesia.png',
+            logo: '/assets/PT Samudera Indonesia.png',
             type: 'Shipping & Logistics'
         },
         {
             name: 'PT. Silkargo Indonesia',
-            logo: '/src/assets/PT Samudera Indonesia.png',
+            logo: '/assets/PT Samudera Indonesia.png',
             type: 'Cargo Services'
         },
         {
             name: 'PT. Tri Elang Jaya Maritim',
-            logo: '/src/assets/trielang.png',
+            logo: '/assets/trielang.png',
             type: 'Maritime Services'
         }
     ];

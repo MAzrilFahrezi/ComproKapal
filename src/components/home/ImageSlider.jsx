@@ -9,8 +9,8 @@ export default function ImageSlider() {
 
   const images = [
     {
-      url: '/src/assets/IMG-20250510-WA0004.jpg',
-      logo: '/src/assets/logo2.png',
+      url: '/assets/IMG-20250510-WA0004.jpg',
+      logo: '/assets/logo2.png',
       title: "PT. Orionindo Jaya Ocean",
       subtitle: translate('home.about.description'),
       description: translate('home.about.location')

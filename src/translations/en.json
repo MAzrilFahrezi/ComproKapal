@@ -182,20 +182,20 @@
   "team": {
     "title": "Our Team",
     "member1": {
-      "name": "John Smith",
-      "position": "CEO & Founder"
+      "name": "Ibnu",
+      "position": "Technical Team"
     },
     "member2": {
-      "name": "Sarah Johnson",
-      "position": "Technical Director"
+      "name": "Bella", 
+      "position": "Technical Team"
     },
     "member3": {
-      "name": "Michael Chen",
-      "position": "Operations Manager"
+      "name": "Rafli",
+      "position": "Support Team"
     },
     "member4": {
-      "name": "Emily Brown",
-      "position": "Senior Surveyor"
+      "name": "Helmi",
+      "position": "Support Team" 
     },
     "collaboration": {
       "title": "Strong Team Collaboration",
@@ -318,63 +318,63 @@
       },
       {
         "id": 7,
-        "src": "/src/assets/IMG-20250510-WA0004.jpg",
+        "src": "/assets/IMG-20250510-WA0004.jpg",
         "category": "Cargo Survey",
         "title": "Port Loading Operations",
         "description": "Supervision of cargo loading and unloading activities at port with modern crane facilities."
       },
       {
         "id": 8,
-        "src": "/src/assets/IMG-20250510-WA0005.jpg",
+        "src": "/assets/IMG-20250510-WA0005.jpg",
         "category": "Cargo Survey",
         "title": "Loading/Unloading Supervision",
         "description": "Supervision of loading and unloading processes to ensure operational safety and efficiency."
       },
       {
         "id": 9,
-        "src": "/src/assets/IMG-20250510-WA0006.jpg",
+        "src": "/assets/IMG-20250510-WA0006.jpg",
         "category": "Ship Survey",
         "title": "Safety Equipment Inspection",
         "description": "Inspection of safety equipment completeness and condition according to international standards."
       },
       {
         "id": 10,
-        "src": "/src/assets/IMG-20250510-WA0007.jpg",
+        "src": "/assets/IMG-20250510-WA0007.jpg",
         "category": "Cargo Survey",
         "title": "Cargo Sampling",
         "description": "Cargo sampling process for quality analysis and standard compliance."
       },
       {
         "id": 11,
-        "src": "/src/assets/IMG-20250510-WA0008.jpg",
+        "src": "/assets/IMG-20250510-WA0008.jpg",
         "category": "Cargo Survey",
         "title": "Port Crane Operations",
         "description": "Supervision of cargo handling using modern port crane facilities for efficient loading and unloading."
       },
       {
         "id": 12,
-        "src": "/src/assets/IMG-20250510-WA0009.jpg",
+        "src": "/assets/IMG-20250510-WA0009.jpg",
         "category": "Cargo Survey",
         "title": "Cargo Loading Inspection",
         "description": "Monitoring and inspection of cargo loading processes with proper equipment and procedures."
       },
       {
         "id": 13,
-        "src": "/src/assets/IMG-20250510-WA0010.jpg",
+        "src": "/assets/IMG-20250510-WA0010.jpg",
         "category": "Cargo Survey",
         "title": "Bulk Cargo Handling",
         "description": "Supervision of bulk cargo loading operations with proper safety measures and equipment."
       },
       {
         "id": 14,
-        "src": "/src/assets/IMG-20250510-WA0011.jpg",
+        "src": "/assets/IMG-20250510-WA0011.jpg",
         "category": "Cargo Survey",
         "title": "Cargo Documentation",
         "description": "Comprehensive documentation and verification of cargo handling processes at port."
       },
       {
         "id": 15,
-        "src": "/src/assets/IMG-20250510-WA0012.jpg",
+        "src": "/assets/IMG-20250510-WA0012.jpg",
         "category": "Cargo Survey",
         "title": "Port Terminal Operations",
         "description": "Oversight of port terminal activities including loading, unloading, and cargo handling procedures."

@@ -10,22 +10,22 @@ const OurTeam = () => {
         {
             name: translate('team.member1.name'),
             position: translate('team.member1.position'),
-            image: "/src/assets/soekarno.jpeg"
+            image: "/assets/team.png"
         },
         {
             name: translate('team.member2.name'),
             position: translate('team.member2.position'),
-            image: "/src/assets/soekarno.jpeg"
+            image: "/assets/team.png"
         },
         {
             name: translate('team.member3.name'),
             position: translate('team.member3.position'),
-            image: "/src/assets/soekarno.jpeg"
+            image: "/assets/team.png"
         },
         {
             name: translate('team.member4.name'),
             position: translate('team.member4.position'),
-            image: "/src/assets/soekarno.jpeg"
+            image: "/assets/team.png"
         },
     ];
     return (

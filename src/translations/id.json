@@ -182,20 +182,20 @@
   "team": {
     "title": "Tim Kami",
     "member1": {
-      "name": "John Smith",
-      "position": "CEO & Pendiri"
+      "name": "Ibnu",
+      "position": "Technical Team"
     },
     "member2": {
-      "name": "Sarah Johnson",
-      "position": "Direktur Teknis"
+      "name": "Bella", 
+      "position": "Technical Team"
     },
     "member3": {
-      "name": "Michael Chen",
-      "position": "Manajer Operasional"
+      "name": "Rafli",
+      "position": "Support Team"
     },
     "member4": {
-      "name": "Emily Brown",
-      "position": "Surveyor Senior"
+      "name": "Helmi",
+      "position": "Support Team" 
     },
     "collaboration": {
       "title": "Kolaborasi Tim yang Kuat",
@@ -318,63 +318,63 @@
       },
       {
         "id": 7,
-        "src": "/src/assets/IMG-20250510-WA0004.jpg",
+        "src": "/assets/IMG-20250510-WA0004.jpg",
         "category": "Survei Kargo",
         "title": "Operasi Bongkar Muat Pelabuhan",
         "description": "Pengawasan aktivitas bongkar muat kargo di pelabuhan dengan fasilitas crane modern."
       },
       {
         "id": 8,
-        "src": "/src/assets/IMG-20250510-WA0005.jpg",
+        "src": "/assets/IMG-20250510-WA0005.jpg",
         "category": "Survei Kargo",
         "title": "Pengawasan Bongkar Muat",
         "description": "Pengawasan proses bongkar muat untuk memastikan keamanan dan efisiensi operasional."
       },
       {
         "id": 9,
-        "src": "/src/assets/IMG-20250510-WA0006.jpg",
+        "src": "/assets/IMG-20250510-WA0006.jpg",
         "category": "Survei Kapal",
         "title": "Inspeksi Peralatan Keselamatan",
         "description": "Pemeriksaan kelengkapan dan kondisi peralatan keselamatan sesuai standar internasional."
       },
       {
         "id": 10,
-        "src": "/src/assets/IMG-20250510-WA0007.jpg",
+        "src": "/assets/IMG-20250510-WA0007.jpg",
         "category": "Survei Kargo",
         "title": "Pengambilan Sampel Kargo",
         "description": "Proses pengambilan sampel kargo untuk analisis kualitas dan kesesuaian standar."
       },
       {
         "id": 11,
-        "src": "/src/assets/IMG-20250510-WA0008.jpg",
+        "src": "/assets/IMG-20250510-WA0008.jpg",
         "category": "Survei Kargo",
         "title": "Operasi Crane Pelabuhan",
         "description": "Pengawasan penanganan kargo menggunakan fasilitas crane pelabuhan modern untuk bongkar muat yang efisien."
       },
       {
         "id": 12,
-        "src": "/src/assets/IMG-20250510-WA0009.jpg",
+        "src": "/assets/IMG-20250510-WA0009.jpg",
         "category": "Survei Kargo",
         "title": "Inspeksi Pemuatan Kargo",
         "description": "Pemantauan dan pemeriksaan proses pemuatan kargo dengan peralatan dan prosedur yang tepat."
       },
       {
         "id": 13,
-        "src": "/src/assets/IMG-20250510-WA0010.jpg",
+        "src": "/assets/IMG-20250510-WA0010.jpg",
         "category": "Survei Kargo",
         "title": "Penanganan Kargo Curah",
         "description": "Pengawasan operasi pemuatan kargo curah dengan tindakan dan peralatan keselamatan yang tepat."
       },
       {
         "id": 14,
-        "src": "/src/assets/IMG-20250510-WA0011.jpg",
+        "src": "/assets/IMG-20250510-WA0011.jpg",
         "category": "Survei Kargo",
         "title": "Dokumentasi Kargo",
         "description": "Dokumentasi dan verifikasi menyeluruh proses penanganan kargo di pelabuhan."
       },
       {
         "id": 15,
-        "src": "/src/assets/IMG-20250510-WA0012.jpg",
+        "src": "/assets/IMG-20250510-WA0012.jpg",
         "category": "Survei Kargo",
         "title": "Operasi Terminal Pelabuhan",
         "description": "Pengawasan aktivitas terminal pelabuhan termasuk prosedur bongkar muat dan penanganan kargo."
