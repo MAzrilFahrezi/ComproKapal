@@ -186,7 +186,7 @@
       "position": "Technical Team"
     },
     "member2": {
-      "name": "Bella", 
+      "name": "Bella",
       "position": "Technical Team"
     },
     "member3": {
@@ -195,7 +195,7 @@
     },
     "member4": {
       "name": "Helmi",
-      "position": "Support Team" 
+      "position": "Support Team"
     },
     "collaboration": {
       "title": "Kolaborasi Tim yang Kuat",
@@ -391,7 +391,7 @@
       },
       "phone": {
         "label": "Telepon",
-        "value": "+62 31 1234 5678"
+        "value": "(62) 813-6730-7405"
       },
       "emails": {
         "label": "Email",
@@ -511,7 +511,7 @@
     "contact": {
       "title": "Hubungi Kami",
       "address": "Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia",
-      "phone": "(021) 1234-5678",
+      "phone": "(62) 813-6730-7405",
       "emails": {
         "main": "operation@orionindo.com",
         "departments": [
