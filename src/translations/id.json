@@ -378,6 +378,48 @@
         "category": "Survei Kargo",
         "title": "Operasi Terminal Pelabuhan",
         "description": "Pengawasan aktivitas terminal pelabuhan termasuk prosedur bongkar muat dan penanganan kargo."
+      },
+     {
+      "id": 16,
+      "src": "/assets/wa16.jpg",
+      "category": "Survei Kapal",
+      "title": "Inspeksi Lambung",
+      "description": "Inspeksi dan penilaian mendetail terhadap kondisi lambung kapal dan integritas struktural."
+      },
+      {
+      "id": 17,
+      "src": "/assets/wa17.jpg",
+      "category": "Survei Kapal",
+      "title": "Survei Peralatan Maritim",
+      "description": "Inspeksi menyeluruh pada peralatan dan mesin maritim untuk kepatuhan keselamatan operasional."
+      },
+      {
+        "id": 18,
+        "src": "/assets/IMG-20250612-WA0012.jpg",
+        "category": "Survei Kargo",
+        "title": "Inspeksi Peralatan Bongkar Muat", 
+        "description": "Pemeriksaan peralatan dan mesin bongkar muat untuk memastikan operasi yang aman."
+      },
+      {
+        "id": 19,
+        "src": "/assets/IMG-20250612-WA0013.jpg",
+        "category": "Survei Kapal",
+        "title": "Survei Kondisi Kapal",
+        "description": "Penilaian menyeluruh terhadap kondisi kapal termasuk struktur dan peralatan."
+      },
+      {
+        "id": 20,
+        "src": "/assets/IMG-20250612-WA0015.jpg",
+        "category": "Survei Kargo", 
+        "title": "Operasi Penanganan Kargo",
+        "description": "Pengawasan profesional aktivitas penanganan kargo dengan prosedur keselamatan yang tepat."
+      },
+      {
+        "id": 21,
+        "src": "/assets/IMG-20250612-WA0016.jpg",
+        "category": "Survei Kargo", 
+        "title": "Penanganan Material Curah",
+        "description": "Pengawasan khusus pemuatan dan pembongkaran material curah dengan tindakan keselamatan lingkungan."
       }
     ]
   },
@@ -401,7 +443,7 @@
             "emails": [
               {
                 "label": "Operation Team",
-                "address": "operation@orionindo.com"
+                "address": "operation@orionindojayaocean.com"
               }
             ]
           },
@@ -410,7 +452,7 @@
             "emails": [
               {
                 "label": "Finance Team",
-                "address": "finance@orionindo.com"
+                "address": "finance@orionindojayaocean.com"
               }
             ]
           },
@@ -419,11 +461,11 @@
             "emails": [
               {
                 "label": "Ibnu",
-                "address": "ibnu@orionindo.com"
+                "address": "ibnu@orionindojayaocean.com"
               },
               {
                 "label": "Bella",
-                "address": "bella@orionindo.com"
+                "address": "bella@orionindojayaocean.com"
               }
             ]
           },
@@ -432,11 +474,11 @@
             "emails": [
               {
                 "label": "Rafli",
-                "address": "rafli@orionindo.com"
+                "address": "rafli@orionindojayaocean.com"
               },
               {
                 "label": "Helmi",
-                "address": "helmi@orionindo.com"
+                "address": "helmi@orionindojayaocean.com"
               }
             ]
           }

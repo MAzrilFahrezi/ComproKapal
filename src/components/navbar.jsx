@@ -56,13 +56,13 @@ export default function Navbar() {
             <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-2">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2">
-                        <a href="mailto:sales@orionindonesia.id" className="flex items-center text-sm hover:text-blue-200 transition-colors group">
+                        <a href="mailto:operation@orionindojayaocean.com" className="flex items-center text-sm hover:text-blue-200 transition-colors group">
                             <EnvelopeIcon className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
-                            <span>sales@orionindonesia.id</span>
+                            <span>operation@orionindojayaocean.com</span>
                         </a>
-                        <a href="tel:+627784090419" className="flex items-center text-sm hover:text-blue-200 transition-colors group">
+                        <a href="tel:+6281367307405" className="flex items-center text-sm hover:text-blue-200 transition-colors group">
                             <PhoneIcon className="h-4 w-4 mr-2 group-hover:scale-110 transition-transform" />
-                            <span>(+62) 7784090419</span>
+                            <span>(62) 813-6730-7405</span>
                         </a>
                         <div className="flex items-center text-sm">
                             <MapPinIcon className="h-4 w-4 mr-2" />
@@ -199,8 +199,29 @@ export default function Navbar() {
                                     href="/contact"
                                     className="block w-full text-center mt-3 px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-800 hover:bg-blue-700 focus:outline-none transition-colors duration-200"
                                 >
-                                    Hubungi Kami
+                                    {currentLanguage === 'id' ? 'Hubungi Kami' : 'Contact Us'}
                                 </a>
+                                {/* Language Switcher for Mobile */}
+                                <div className="mt-4 pt-4 border-t border-gray-200">
+                                    <div className="flex items-center justify-between px-3">
+                                        <span className="text-base font-medium text-gray-600">
+                                            {currentLanguage === 'id' ? 'Ganti Bahasa:' : 'Switch Language:'}
+                                        </span>
+                                        <button
+                                            className="flex items-center text-gray-600 hover:text-blue-900 focus:outline-none p-2 rounded-md hover:bg-gray-100"
+                                            onClick={handleLanguageChange}
+                                        >
+                                            <img
+                                                src={currentLanguage === 'id' ?
+                                                    "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" :
+                                                    "https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg"}
+                                                alt={currentLanguage === 'id' ? "English" : "Indonesia"}
+                                                className="h-6 w-6"
+                                            />
+                                            <span className="ml-2 text-sm font-medium">{currentLanguage === 'id' ? 'English' : 'Indonesia'}</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </Disclosure.Panel>
                     </>

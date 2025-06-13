@@ -378,7 +378,50 @@
         "category": "Cargo Survey",
         "title": "Port Terminal Operations",
         "description": "Oversight of port terminal activities including loading, unloading, and cargo handling procedures."
+      },
+      {
+        "id": 16,
+        "src": "/assets/wa16.jpg",
+        "category": "Ship Survey",
+        "title": "Hull Inspection",
+        "description": "Detailed inspection and assessment of ship hull condition and structural integrity."
+      },
+      {
+        "id": 17,
+        "src": "/assets/wa17.jpg",
+        "category": "Ship Survey",
+        "title": "Marine Equipment Survey",
+        "description": "Thorough inspection of marine equipment and machinery for operational safety compliance."
+      },
+        {
+        "id": 18,
+        "src": "/assets/IMG-20250612-WA0012.jpg",
+        "category": "Cargo Survey",
+        "title": "Loading Equipment Inspection", 
+        "description": "Inspection of cargo loading equipment and machinery to ensure safe operations."
+      },
+      {
+        "id": 19,
+        "src": "/assets/IMG-20250612-WA0013.jpg",
+        "category": "Ship Survey",
+        "title": "Vessel Condition Survey",
+        "description": "Comprehensive assessment of vessel condition including structure and equipment."
+      },
+      {
+        "id": 20,
+        "src": "/assets/IMG-20250612-WA0015.jpg",
+        "category": "Cargo Survey", 
+        "title": "Cargo Handling Operations",
+        "description": "Professional supervision of cargo handling activities with proper safety procedures."
+      },
+      {
+        "id": 21,
+        "src": "/assets/IMG-20250612-WA0016.jpg",
+        "category": "Cargo Survey", 
+        "title": "Bulk Material Handling",
+        "description": "Specialized supervision of bulk material loading and unloading with environmental safety measures."
       }
+      
     ]
   },
   "contact": {
@@ -401,7 +444,7 @@
             "emails": [
               {
                 "label": "Operation Team",
-                "address": "operation@orionindo.com"
+                "address": "operation@orionindojayaocean.com"
               }
             ]
           },
@@ -410,7 +453,7 @@
             "emails": [
               {
                 "label": "Finance Team",
-                "address": "finance@orionindo.com"
+                "address": "finance@orionindojayaocean.com"
               }
             ]
           },
@@ -419,11 +462,11 @@
             "emails": [
               {
                 "label": "Ibnu",
-                "address": "ibnu@orionindo.com"
+                "address": "ibnu@orionindojayaocean.com"
               },
               {
                 "label": "Bella",
-                "address": "bella@orionindo.com"
+                "address": "bella@orionindojayaocean.com"
               }
             ]
           },
@@ -432,11 +475,11 @@
             "emails": [
               {
                 "label": "Rafli",
-                "address": "rafli@orionindo.com"
+                "address": "rafli@orionindojayaocean.com"
               },
               {
                 "label": "Helmi",
-                "address": "helmi@orionindo.com"
+                "address": "helmi@orionindojayaocean.com"
               }
             ]
           }
