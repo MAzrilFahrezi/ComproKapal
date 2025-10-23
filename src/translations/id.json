@@ -378,7 +378,134 @@
         "category": "Survei Kargo",
         "title": "Operasi Terminal Pelabuhan",
         "description": "Pengawasan aktivitas terminal pelabuhan termasuk prosedur bongkar muat dan penanganan kargo."
+      },
+      {
+        "id": 16,
+        "src": "/assets/IMG-20251016-WA0130.jpg",
+        "category": "Survei Kargo",
+        "title": "Survei Peralatan Tongkang",
+        "description": "Pemeriksaan menyeluruh peralatan dan mesin yang dimuat di atas tongkang."
+      },
+      {
+        "id": 17,
+        "src": "/assets/IMG-20251016-WA0131.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengikatan Peralatan Malam Hari",
+        "description": "Pengawasan profesional pengikatan dan pengamanan alat berat selama operasi malam hari."
+      },
+      {
+        "id": 18,
+        "src": "/assets/IMG-20251016-WA0132.jpg",
+        "category": "Survei Kapal",
+        "title": "Operasi Sandar Kapal",
+        "description": "Pemantauan dan pengawasan prosedur sandar dan tambat kapal."
+      },
+      {
+        "id": 19,
+        "src": "/assets/IMG-20251016-WA0133.jpg",
+        "category": "Survei Kargo",
+        "title": "Inspeksi Pengikatan Peralatan",
+        "description": "Pemeriksaan detail metode pengikatan dan pengamanan peralatan oleh surveyor bersertifikat."
+      },
+      {
+        "id": 20,
+        "src": "/assets/IMG-20251016-WA0134.jpg",
+        "category": "Survei Kargo",
+        "title": "Survei Pengikatan Peralatan Rig",
+        "description": "Survei profesional pengikatan dan pengamanan peralatan rig untuk transportasi yang aman."
+      },
+      {
+        "id": 21,
+        "src": "/assets/IMG-20251016-WA0135.jpg",
+        "category": "Survei Kargo",
+        "title": "Inspeksi Pengamanan Mesin Berat",
+        "description": "Pemeriksaan pengikatan mesin berat dengan jaring pengaman dan metode pengamanan yang tepat."
+      },
+      {
+        "id": 22,
+        "src": "/assets/IMG-20251016-WA0136.jpg",
+        "category": "Survei Kargo",
+        "title": "Verifikasi Titik Pengikatan",
+        "description": "Verifikasi detail titik pengikatan dan stabilitas peralatan pengamanan di dek."
+      },
+      {
+        "id": 23,
+        "src": "/assets/IMG-20251016-WA0137.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengikatan Peralatan Industri",
+        "description": "Pengawasan profesional pengikatan peralatan industri dengan langkah keselamatan yang tepat."
+      },
+      {
+        "id": 24,
+        "src": "/assets/IMG-20251016-WA0138.jpg",
+        "category": "Survei Kargo",
+        "title": "Survei Pengamanan Kargo Laut",
+        "description": "Survei menyeluruh metode pengamanan kargo termasuk jaring dan peralatan pengikatan."
+      },
+      {
+        "id": 25,
+        "src": "/assets/IMG-20251016-WA0139.jpg",
+        "category": "Survei Kargo",
+        "title": "Penilaian Pengikatan Kargo Dek",
+        "description": "Penilaian pengikatan dan pengamanan kargo dek untuk transportasi maritim yang aman."
+      },
+      {
+        "id": 26,
+        "src": "/assets/IMG-20251016-WA0140.jpg",
+        "category": "Survei Kargo",
+        "title": "Supervisi Tim Pengikatan",
+        "description": "Supervisi dan koordinasi tim pengikatan memastikan prosedur pengamanan yang tepat."
+      },
+      {
+        "id": 27,
+        "src": "/assets/IMG-20251016-WA0141.jpg",
+        "category": "Survei Kargo",
+        "title": "Inspeksi Pengikatan Kargo",
+        "description": "Pemeriksaan detail sistem pengikatan dan pengamanan kargo di dek tongkang."
+      },
+      {
+        "id": 28,
+        "src": "/assets/IMG-20251016-WA0130.jpg",
+        "category": "Survei Kapal",
+        "title": "Operasi Survei Draft",
+        "description": "Pengukuran survei draft profesional pada tongkang untuk menentukan berat muatan secara akurat."
+      },
+      {
+        "id": 29,
+        "src": "/assets/IMG-20251016-WA0131.jpg",
+        "category": "Survei Kapal",
+        "title": "Pengukuran Draft Tongkang",
+        "description": "Surveyor melakukan pengukuran draft dan inspeksi dek pada kapal tongkang."
+      },
+      {
+        "id": 30,
+        "src": "/assets/IMG-20251016-WA0132.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengawasan Pemuatan Kargo",
+        "description": "Supervisi langsung operasi pemuatan kargo dan proses dokumentasi."
+      },
+     {
+        "id": 31,
+        "src": "/assets/Gambar WhatsApp1.jpg",
+        "category": "Survei Kargo",
+        "title": "Operasi survei draft kapal",
+        "description": "Supervisi langsung operasi survei draft kapal dan proses dokumentasi."
+      },
+      {
+        "id": 32,
+        "src": "/assets/Gambar WhatsApp2.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengukuran draft tongkang",
+        "description": "Pengukuran survei draft tongkang oleh surveyor profesional untuk menentukan berat muatan secara akurat."
+      },
+      {
+        "id": 33,
+        "src": "/assets/Gambar WhatsApp3.jpg",
+        "category": "Survei Kargo",
+        "title": "Pengawasan pemuatan kargo",
+        "description": "Pengawasan pemuatan kargo oleh surveyor profesional untuk memastikan kelaikan dan keamanan operasional."
       }
+
     ]
   },
   "contact": {
@@ -391,7 +518,7 @@
       },
       "phone": {
         "label": "Telepon",
-        "value": "+62 31 1234 5678"
+        "value": "(62) 813-6730-7405"
       },
       "emails": {
         "label": "Email",
@@ -511,7 +638,7 @@
     "contact": {
       "title": "Hubungi Kami",
       "address": "Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia",
-      "phone": "(021) 1234-5678",
+      "phone": "(62) 813-6730-7405",
       "emails": {
         "main": "operation@orionindo.com",
         "departments": [

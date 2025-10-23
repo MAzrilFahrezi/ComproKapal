@@ -378,7 +378,133 @@
         "category": "Cargo Survey",
         "title": "Port Terminal Operations",
         "description": "Oversight of port terminal activities including loading, unloading, and cargo handling procedures."
-      }
+      },
+      {
+        "id": 16,
+        "src": "/assets/IMG-20251016-WA0130.jpg",
+        "category": "Cargo Survey",
+        "title": "Barge Equipment Survey",
+        "description": "Comprehensive inspection of equipment and machinery loaded on barge vessels."
+      },
+      {
+        "id": 17,
+        "src": "/assets/IMG-20251016-WA0131.jpg",
+        "category": "Cargo Survey",
+        "title": "Night Time Equipment Lashing",
+        "description": "Professional lashing and securing supervision of heavy equipment during night operations."
+      },
+      {
+        "id": 18,
+        "src": "/assets/IMG-20251016-WA0132.jpg",
+        "category": "Ship Survey",
+        "title": "Vessel Docking Operations",
+        "description": "Monitoring and supervision of vessel docking and mooring procedures."
+      },
+      {
+        "id": 19,
+        "src": "/assets/IMG-20251016-WA0133.jpg",
+        "category": "Cargo Survey",
+        "title": "Equipment Lashing Inspection",
+        "description": "Detailed inspection of equipment lashing and securing methods by certified surveyors."
+      },
+      {
+        "id": 20,
+        "src": "/assets/IMG-20251016-WA0134.jpg",
+        "category": "Cargo Survey",
+        "title": "Rig Equipment Lashing Survey",
+        "description": "Professional survey of rig equipment lashing and securing for safe transport."
+      },
+      {
+        "id": 21,
+        "src": "/assets/IMG-20251016-WA0135.jpg",
+        "category": "Cargo Survey",
+        "title": "Heavy Machinery Securing Inspection",
+        "description": "Inspection of heavy machinery lashing with safety nets and proper securing methods."
+      },
+      {
+        "id": 22,
+        "src": "/assets/IMG-20251016-WA0136.jpg",
+        "category": "Cargo Survey",
+        "title": "Lashing Point Verification",
+        "description": "Detailed verification of lashing points and securing equipment stability on deck."
+      },
+      {
+        "id": 23,
+        "src": "/assets/IMG-20251016-WA0137.jpg",
+        "category": "Cargo Survey",
+        "title": "Industrial Equipment Lashing",
+        "description": "Professional lashing supervision of industrial equipment with proper safety measures."
+      },
+      {
+        "id": 24,
+        "src": "/assets/IMG-20251016-WA0138.jpg",
+        "category": "Cargo Survey",
+        "title": "Marine Cargo Securing Survey",
+        "description": "Comprehensive survey of cargo securing methods including nets and lashing equipment."
+      },
+      {
+        "id": 25,
+        "src": "/assets/IMG-20251016-WA0139.jpg",
+        "category": "Cargo Survey",
+        "title": "Deck Cargo Lashing Assessment",
+        "description": "Assessment of deck cargo lashing and securing for safe maritime transport."
+      },
+      {
+        "id": 26,
+        "src": "/assets/IMG-20251016-WA0140.jpg",
+        "category": "Cargo Survey",
+        "title": "Team Lashing Supervision",
+        "description": "Supervision and coordination of lashing team ensuring proper securing procedures."
+      },
+      {
+        "id": 27,
+        "src": "/assets/IMG-20251016-WA0141.jpg",
+        "category": "Cargo Survey",
+        "title": "Cargo Lashing Inspection",
+        "description": "Detailed inspection of cargo lashing and securing systems on barge deck."
+      },
+      {
+        "id": 28,
+        "src": "/assets/IMG-20251016-WA0130.jpg",
+        "category": "Ship Survey",
+        "title": "Draft Survey Operations",
+        "description": "Professional draft survey measurement on barge to determine cargo weight accurately."
+      },
+      {
+        "id": 29,
+        "src": "/assets/IMG-20251016-WA0131.jpg",
+        "category": "Ship Survey",
+        "title": "Barge Draft Measurement",
+        "description": "Surveyor conducting draft measurement and deck inspection on barge vessel."
+      },
+      {
+        "id": 30,
+        "src": "/assets/IMG-20251016-WA0132.jpg",
+        "category": "Cargo Survey",
+        "title": "Cargo Loading Supervision",
+        "description": "On-site supervision of cargo loading operations and documentation process."
+      },
+    {
+      "id": 31,
+      "src": "/assets/Gambar WhatsApp1.jpg",
+      "category": "Cargo Survey",
+      "title": "Draft Survey Operation",
+      "description": "On-site supervision of ship draft survey operations and the documentation process."
+    },
+    {
+      "id": 32,
+      "src": "/assets/Gambar WhatsApp2.jpg",
+      "category": "Cargo Survey",
+      "title": "Barge Draft Measurement",
+      "description": "Barge draft survey measurement by professional surveyors to accurately determine cargo weight."
+    },
+    {
+      "id": 33,
+      "src": "/assets/Gambar WhatsApp3.jpg",
+      "category": "Cargo Survey",
+      "title": "Cargo Loading Supervision",
+      "description": "Cargo loading supervision by professional surveyors to ensure seaworthiness and operational safety."
+    }
     ]
   },
   "contact": {
@@ -391,7 +517,7 @@
       },
       "phone": {
         "label": "Phone",
-        "value": "+62 31 1234 5678"
+        "value": "(62) 813-6730-7405"
       },
       "emails": {
         "label": "Email",
@@ -511,7 +637,7 @@
     "contact": {
       "title": "Contact Us",
       "address": "Jl.Sutan Syahrir Lr. Kamboja No.691 Palembang - Indonesia",
-      "phone": "(021) 1234-5678",
+      "phone": "(62) 813-6730-7405",
       "emails": {
         "main": "operation@orionindo.com",
         "departments": [

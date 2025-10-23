@@ -13,11 +13,6 @@ export default function Partners() {
             type: 'Fiberboard Industry'
         },
         {
-            name: 'PT. ADR Group',
-            logo: '/assets/Pt ADR.png',
-            type: 'Business Group'
-        },
-        {
             name: 'PT. Indonesia Fibreboard Industry Tbk.',
             logo: '/assets/ifi.png',
             type: 'Fiberboard Manufacturing'
@@ -41,6 +36,11 @@ export default function Partners() {
             name: 'PT. Tri Elang Jaya Maritim',
             logo: '/assets/trielang.png',
             type: 'Maritime Services'
+        },
+        {
+            name: 'CV Syafer',
+            logo: '/assets/syafer.png',
+            type: 'Manufacturing & Export'
         }
     ];
 

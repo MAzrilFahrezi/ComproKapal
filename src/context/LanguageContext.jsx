@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import enTranslations from '../translations/en.json';
 import idTranslations from '../translations/id.json';
 
@@ -13,7 +13,16 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-    const [currentLanguage, setCurrentLanguage] = useState('en'); // Default to English
+    // Get language from localStorage or default to 'en'
+    const [currentLanguage, setCurrentLanguage] = useState(() => {
+        const savedLanguage = localStorage.getItem('language');
+        return savedLanguage || 'en';
+    });
+
+    // Save language to localStorage whenever it changes
+    useEffect(() => {
+        localStorage.setItem('language', currentLanguage);
+    }, [currentLanguage]);
 
     const translations = {
         en: enTranslations,
