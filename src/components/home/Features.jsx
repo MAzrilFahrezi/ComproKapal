@@ -120,7 +120,7 @@ export default function Features() {
                         </div>
                         <div className="hidden md:block relative h-full overflow-hidden">
                             <img
-                                src="public\gambar1.jpg"
+                                src="assets/gambar1.jpg"
                                 alt="Maritime operations"
                                 className="w-full h-full object-cover object-center"
                             />
