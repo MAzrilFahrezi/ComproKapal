@@ -186,7 +186,7 @@
       "position": "Technical Team"
     },
     "member2": {
-      "name": "Bella", 
+      "name": "Bella",
       "position": "Technical Team"
     },
     "member3": {
@@ -195,7 +195,7 @@
     },
     "member4": {
       "name": "Helmi",
-      "position": "Support Team" 
+      "position": "Support Team"
     },
     "collaboration": {
       "title": "Kolaborasi Tim yang Kuat",
@@ -528,7 +528,7 @@
             "emails": [
               {
                 "label": "Operation Team",
-                "address": "operation@orionindo.com"
+                "address": "operation@orionindojayaocean.com"
               }
             ]
           },
@@ -537,7 +537,7 @@
             "emails": [
               {
                 "label": "Finance Team",
-                "address": "finance@orionindo.com"
+                "address": "finance@orionindojayaocean.com"
               }
             ]
           },
@@ -546,11 +546,11 @@
             "emails": [
               {
                 "label": "Ibnu",
-                "address": "ibnu@orionindo.com"
+                "address": "ibnu@orionindojayaocean.com"
               },
               {
                 "label": "Bella",
-                "address": "bella@orionindo.com"
+                "address": "bella@orionindojayaocean.com"
               }
             ]
           },
@@ -559,11 +559,11 @@
             "emails": [
               {
                 "label": "Rafli",
-                "address": "rafli@orionindo.com"
+                "address": "rafli@orionindojayaocean.com"
               },
               {
                 "label": "Helmi",
-                "address": "helmi@orionindo.com"
+                "address": "helmi@orionindojayaocean.com"
               }
             ]
           }

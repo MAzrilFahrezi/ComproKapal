@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function Contact() {
     const { translate } = useLanguage();
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const subject = `Contact Form Submission from ${formData.name}`;
+        // Mengubah body agar hanya berisi pesan dari pengguna
+        const body = formData.message;
+        const mailtoLink = `mailto:operation@orionindojayaocean.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+    };
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -72,7 +94,7 @@ export default function Contact() {
                 </div>
                 <div className="bg-white p-8 rounded-xl shadow-lg">
                     <h2 className="text-2xl font-semibold text-blue-900 mb-6">{translate('contact.form.title')}</h2>
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                                 {translate('contact.form.name.label')}
@@ -81,7 +103,10 @@ export default function Contact() {
                                 type="text"
                                 id="name"
                                 name="name"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                value={formData.name}
+                                onChange={handleChange}
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2"
+                                required
                             />
                         </div>
                         <div>
@@ -92,7 +117,10 @@ export default function Contact() {
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                value={formData.email}
+                                onChange={handleChange}
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2"
+                                required
                             />
                         </div>
                         <div>
@@ -103,7 +131,10 @@ export default function Contact() {
                                 id="message"
                                 name="message"
                                 rows={4}
-                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                                value={formData.message}
+                                onChange={handleChange}
+                                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-3 py-2"
+                                required
                             ></textarea>
                         </div>
                         <button
